@@ -1,0 +1,10 @@
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\sfml-graphics-2.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\sfml-window-2.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\sfml-system-2.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\freetype.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\zlib1.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\bz2.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\libpng16.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\brotlidec.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_exe\brotlicommon.dll
+C:\Users\Edwin\Documents\CMGT\3D_Rendering\mge_v19_student_version\_visual_studio\release_dynamic_build\mge.vcxproj.CopyComplete
