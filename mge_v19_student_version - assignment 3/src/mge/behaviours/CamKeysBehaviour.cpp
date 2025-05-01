@@ -37,7 +37,6 @@ void CamKeysBehaviour::update(float pStep)
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
             angleY -= _turnSpeed * pStep;
         }
-
         // Rotate around Z-axis
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)) {
             angleZ += _turnSpeed * pStep;
@@ -66,7 +65,6 @@ void CamKeysBehaviour::update(float pStep)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::F)) {
         _owner->translate(glm::vec3(0.0f, -_moveSpeed * pStep, 0.0f)); // Move down
     }
-
     // Horizontal and forward/backward movement
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         _owner->translate(glm::vec3(-_moveSpeed * pStep, 0.0f, 0.0f)); // Move left

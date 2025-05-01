@@ -2,6 +2,8 @@
 #define OBB_HPP
 
 #include <glm/glm.hpp>
+#include "mge/core/GameObject.hpp"
+#include "mge/collision/AABB.hpp"
 
 struct OBB {
     glm::vec3 center;
@@ -27,6 +29,8 @@ struct OBB {
         corners[6] = center + extentsX + extentsY + extentsZ;
         corners[7] = center - extentsX + extentsY + extentsZ;
     }
+    float OBB::getVolume();
+    static OBB CreateOBBForGameObject(GameObject* obj);
 };;
 
 #endif

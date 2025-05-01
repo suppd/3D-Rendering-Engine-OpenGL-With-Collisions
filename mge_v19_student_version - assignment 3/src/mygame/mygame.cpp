@@ -23,7 +23,7 @@
 #include "mge/collision/CollisionDetector.hpp"
 #include "mge/util/DebugDraw.hpp"
 #include "mge/collision/AABB.hpp"
-
+#include "mge/util/TestManager.hpp"
 #include "mge/util/DebugHud.hpp"
 
 #include "mygame/config.hpp"
@@ -42,6 +42,7 @@ void mygame::initialize() {
 	std::cout << "Initializing HUD" << std::endl;
 	_hud = new DebugHud(_window);
 	std::cout << "HUD initialized." << std::endl << std::endl;
+    srand(10399); //always same seed
 }
 
 //build the game _world
@@ -88,68 +89,74 @@ void mygame::_initializeScene()
     _world->setMainCamera(camera);
 
 
-    //non nested objects
-    GameObject* environmentSphere = new GameObject("EnSphere", glm::vec3(0, 0, 0));
-    environmentSphere->scale(glm::vec3(1, 1, 1));
-    environmentSphere->setLocalPosition(glm::vec3(1, 0, 0));
-    environmentSphere->setMesh(sphereMeshS);
-    environmentSphere->setMaterial(brickMaterial);
-    _world->add(environmentSphere);
-    _gameObjects.push_back(environmentSphere);
+    ////non nested objects
+    //GameObject* environmentSphere = new GameObject("EnSphere", glm::vec3(0, 0, 0));
+    //environmentSphere->scale(glm::vec3(1, 1, 1));
+    //environmentSphere->setLocalPosition(glm::vec3(1, 0, 0));
+    //environmentSphere->setMesh(sphereMeshS);
+    //environmentSphere->setMaterial(brickMaterial);
+    //_world->add(environmentSphere);
+    //_gameObjects.push_back(environmentSphere);
 
-    //add the plane
-    GameObject* plane = new GameObject ("plane", glm::vec3(0,0,0));
-    plane->scale(glm::vec3(1,1,1));
-    plane->setMesh(planeMeshDefault);
-    plane->setMaterial(runicStoneMaterial);
-    plane->setBehaviour(new KeysBehaviour());
-    _world->add(plane);
-    _gameObjects.push_back(plane);
-    camera->setParent(plane);
+    ////add the plane
+    //GameObject* plane = new GameObject ("plane", glm::vec3(0,0,0));
+    //plane->scale(glm::vec3(1,1,1));
+    //plane->setMesh(planeMeshDefault);
+    //plane->setMaterial(runicStoneMaterial);
+    //plane->setBehaviour(new KeysBehaviour());
+    //_world->add(plane);
+    //_gameObjects.push_back(plane);
+    //camera->setParent(plane);
 
-    //add a sphere
-    //GameObject* sphere = new GameObject ("sphere", glm::vec3(0,0,0));
-    //sphere->scale(glm::vec3(0.4,0.4,0.4));
-    //sphere->setLocalPosition(glm::vec3(1, 0, 1));
-    //sphere->setMesh (sphereMeshS);
+    ////add a sphere
+    ////GameObject* sphere = new GameObject ("sphere", glm::vec3(0,0,0));
+    ////sphere->scale(glm::vec3(0.4,0.4,0.4));
+    ////sphere->setLocalPosition(glm::vec3(1, 0, 1));
+    ////sphere->setMesh (sphereMeshS);
+    ////sphere->setMaterial(runicStoneMaterial);
+    //////sphere->setParent(plane);
+    ////_world->add(sphere);
+    ////_gameObjects.push_back(sphere);
+
+    //GameObject* sphere = new GameObject("sphere", glm::vec3(0, 0, 0));
+    //sphere->setMesh(sphereMeshS);
+    //sphere->setLocalPosition(glm::vec3(0, 2, 0));
+    //sphere->scale(glm::vec3(0.4f, 0.4f, 0.4f)); // No scaling
     //sphere->setMaterial(runicStoneMaterial);
-    ////sphere->setParent(plane);
     //_world->add(sphere);
     //_gameObjects.push_back(sphere);
 
-    GameObject* sphere = new GameObject("sphere", glm::vec3(0, 0, 0));
-    sphere->setMesh(sphereMeshS);
-    sphere->setLocalPosition(glm::vec3(0, 2, 0));
-    sphere->scale(glm::vec3(0.4f, 0.4f, 0.4f)); // No scaling
-    sphere->setMaterial(runicStoneMaterial);
-    _world->add(sphere);
-    _gameObjects.push_back(sphere);
+    ////add a teapot 
+    //GameObject* teapot = new GameObject("teapot", glm::vec3(0, 0, 0));
+    //teapot->scale(glm::vec3(0.4, 0.4, 0.4));
+    //teapot->setLocalPosition(glm::vec3(0, 2, 0));
+    //teapot->setMesh(teampotMeshS);
+    //teapot->setBehaviour(new RotatingBehaviour());
+    //teapot->setMaterial(redMaterial);
+    ////teapot->setParent(plane);
+    //_world->add(teapot);
+    //_gameObjects.push_back(teapot);
 
-    //add a teapot 
-    GameObject* teapot = new GameObject("teapot", glm::vec3(0, 0, 0));
-    teapot->scale(glm::vec3(0.4, 0.4, 0.4));
-    teapot->setLocalPosition(glm::vec3(0, 2, 0));
-    teapot->setMesh(teampotMeshS);
-    teapot->setBehaviour(new RotatingBehaviour());
-    teapot->setMaterial(redMaterial);
-    //teapot->setParent(plane);
-    _world->add(teapot);
-    _gameObjects.push_back(teapot);
+    ////plane->add(teapot);
+    //plane->add(sphere);
 
-    //plane->add(teapot);
-    plane->add(sphere);
-
-    camera->setBehaviour(new CamKeysBehaviour());
-    camera->setBehaviourTarget(plane, camera->getBehaviour());
 
 
     Light* light = new Light("light", glm::vec3(3,6,0));
     light->scale(glm::vec3(0.1f, 0.1f, 0.1f));
     light->setMesh(cubeMeshF);
     light->setMaterial(lightMaterial);
+    light->setAmbientStrength(3);
     light->setBehaviour(new KeysBehaviour(25));
     _world->add(light);
     _world->setMainLight(light);
+
+    //Testing!
+    generateRandomObjects(10);
+    TestManager tester;
+    tester.RunAllTests(_gameObjects);
+    camera->setBehaviour(new CamKeysBehaviour());
+    camera->setBehaviourTarget(light, camera->getBehaviour());
 
 }
 
@@ -160,50 +167,40 @@ void mygame::_render() {
 
     for (GameObject* obj : _gameObjects) {
         // Draw OBB in red
-        OBB obb = createOBBForGameObject(obj);
-        DebugDraw::DrawOBB(obb, glm::vec3(1, 0, 0)); 
+        OBB obb = OBB::CreateOBBForGameObject(obj);
+        DebugDraw::DrawOBB(obb, glm::vec3(0, 0, 1)); 
 
         // Draw AABB in green
-        AABB aabb = computeAABBForGameObject(obj);
+        AABB aabb = AABB::ComputeAABBForGameObject(obj);
         DebugDraw::DrawAABB(aabb, glm::vec3(0, 1, 0)); 
-        std::cout << "OBB and AABB created for: " << obj->getName() << std::endl;
+        //std::cout << "OBB and AABB created for: " << obj->getName() << std::endl;
     }
     //draw the collision boxes using debug shader
     DebugDraw::Render(_world->getMainCamera()->getView(), _world->getMainCamera()->getProjection());
 }
 
-OBB mygame::createOBBForGameObject(GameObject* obj) {
-    glm::vec3 center = obj->getWorldPosition();
+//OBB mygame::createOBBForGameObject(GameObject* obj) {
+//    glm::vec3 center = obj->getWorldPosition();
+//
+//    // Compute local AABB
+//    AABB localAABB = AABB::ComputeLocalAABB(obj->getMesh());
+//    glm::vec3 localExtents = (localAABB.max - localAABB.min) * 0.5f;
+//
+//    // Extract world transform (rotation + scale)
+//    glm::mat3 worldTransform = glm::mat3(obj->getWorldTransform());
+//
+//    // Transform the extents using absolute rotation
+//    glm::vec3 extents = glm::vec3(
+//        glm::length(worldTransform[0] * localExtents),
+//        glm::length(worldTransform[1] * localExtents),
+//        glm::length(worldTransform[2] * localExtents)
+//    );
+//
+//    glm::mat3 orientation = worldTransform;
+//
+//    return OBB(center, extents, orientation);
+//}
 
-    // Compute local AABB
-    AABB localAABB = AABB::computeLocalAABB(obj->getMesh());
-    glm::vec3 localExtents = (localAABB.max - localAABB.min) * 0.5f;
-
-    // Extract world transform (rotation + scale)
-    glm::mat3 worldTransform = glm::mat3(obj->getWorldTransform());
-
-    // Transform the extents using absolute rotation
-    glm::vec3 extents = glm::vec3(
-        glm::length(worldTransform[0] * localExtents),
-        glm::length(worldTransform[1] * localExtents),
-        glm::length(worldTransform[2] * localExtents)
-    );
-
-    glm::mat3 orientation = worldTransform;
-
-    return OBB(center, extents, orientation);
-}
-
-AABB mygame::computeAABBForGameObject(GameObject* obj) {
-    // Compute local AABB
-    AABB localAABB = AABB::computeLocalAABB(obj->getMesh());
-
-    // Transform the AABB to world space
-    glm::vec3 min = obj->getWorldTransform() * glm::vec4(localAABB.min, 1.0f);
-    glm::vec3 max = obj->getWorldTransform() * glm::vec4(localAABB.max, 1.0f);
-
-    return AABB(min, max);
-}
 
 void mygame::_updateHud() {
     std::string debugInfo = "";
@@ -213,32 +210,63 @@ void mygame::_updateHud() {
     _hud->draw();
 }
 
-void mygame::_checkCollisions() {
-    for (size_t i = 0; i < _gameObjects.size(); ++i) {
-        for (size_t j = i + 1; j < _gameObjects.size(); ++j) {
-            // Check OBB collisions
-            OBB obb1 = createOBBForGameObject(_gameObjects[i]);
-            OBB obb2 = createOBBForGameObject(_gameObjects[j]);
-            DebugDraw::DrawOBB(obb1, glm::vec3(1, 0, 0)); // Red color for OBB
-            DebugDraw::DrawOBB(obb2, glm::vec3(1, 0, 0)); // Red color for OBB
+//void mygame::_checkCollisions() {
+//    for (size_t i = 0; i < _gameObjects.size(); ++i) {
+//        for (size_t j = i + 1; j < _gameObjects.size(); ++j) {
+//            // Check OBB collisions
+//            OBB obb1 = createOBBForGameObject(_gameObjects[i]);
+//            OBB obb2 = createOBBForGameObject(_gameObjects[j]);
+//            DebugDraw::DrawOBB(obb1, glm::vec3(1, 0, 0)); // Red color for OBB
+//            DebugDraw::DrawOBB(obb2, glm::vec3(1, 0, 0)); // Red color for OBB
+//
+//            if (obb1.intersects(obb2)) {
+//              /*  std::cout << "OBB Collision detected between " << _gameObjects[i]->getName()
+//                    << " and " << _gameObjects[j]->getName() << std::endl;*/
+//            }
+//
+//            // Check AABB collisions
+//            AABB aabb1 = AABB::ComputeAABBForGameObject(_gameObjects[i]);
+//            AABB aabb2 = AABB::ComputeAABBForGameObject(_gameObjects[j]);
+//            DebugDraw::DrawAABB(aabb1, glm::vec3(0, 1, 0)); // Green color for AABB
+//            DebugDraw::DrawAABB(aabb2, glm::vec3(0, 1, 0)); // Green color for AABB
+//
+//            if (CollisionDetector::checkCollisionAABB(aabb1, aabb2)) {
+//               /* std::cout << "AABB Collision detected between " << _gameObjects[i]->getName()
+//                    << " and " << _gameObjects[j]->getName() << std::endl;*/
+//            }
+//        }
+//    }
+//}
+void mygame::generateRandomObjects(int count) {
+    Mesh* sphereMesh = Mesh::load(config::MGE_MODEL_PATH + "sphere_smooth.obj");
+    Mesh* cubeMesh = Mesh::load(config::MGE_MODEL_PATH + "cube_flat.obj");
+    Mesh* teapotMesh = Mesh::load(config::MGE_MODEL_PATH + "teapot_smooth.obj");
 
-            if (obb1.intersects(obb2)) {
-                std::cout << "OBB Collision detected between " << _gameObjects[i]->getName()
-                    << " and " << _gameObjects[j]->getName() << std::endl;
-            }
+    AbstractMaterial* redMaterial = new ColorMaterial(glm::vec3(1, 0, 0), _world->getMainCamera());
+    AbstractMaterial* greenMaterial = new ColorMaterial(glm::vec3(0, 1, 0), _world->getMainCamera());
 
-            // Check AABB collisions
-            AABB aabb1 = computeAABBForGameObject(_gameObjects[i]);
-            AABB aabb2 = computeAABBForGameObject(_gameObjects[j]);
-            DebugDraw::DrawAABB(aabb1, glm::vec3(0, 1, 0)); // Green color for AABB
-            DebugDraw::DrawAABB(aabb2, glm::vec3(0, 1, 0)); // Green color for AABB
+    for (int i = 0; i < count; ++i) {
+        // Random position
+        float x = (rand() % 200 - 100) / 10.0f;
+        float y = (rand() % 100) / 10.0f;
+        float z = (rand() % 200 - 100) / 10.0f;
 
-            if (CollisionDetector::checkCollisionAABB(aabb1, aabb2)) {
-                std::cout << "AABB Collision detected between " << _gameObjects[i]->getName()
-                    << " and " << _gameObjects[j]->getName() << std::endl;
-            }
-        }
+        // Random scale 
+        float scale = (rand() % 100) / 100.0f + 0.5f;
+
+        Mesh* mesh = (i % 2 == 0) ? teapotMesh : cubeMesh;
+        AbstractMaterial* mat = (i % 2 == 0) ? redMaterial : greenMaterial;
+
+        GameObject* obj = new GameObject("randObj_" + std::to_string(i), glm::vec3(0));
+        obj->setMesh(mesh);
+        obj->setMaterial(mat);
+        obj->setLocalPosition(glm::vec3(x, y, z));
+        obj->scale(glm::vec3(scale));
+        _world->add(obj);
+        _gameObjects.push_back(obj);
     }
+
+    std::cout << count << " random objects generated.\n";
 }
 
 

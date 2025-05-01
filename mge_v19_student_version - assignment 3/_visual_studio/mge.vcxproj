@@ -194,6 +194,7 @@
     <ClInclude Include="..\src\mge\MGEDemo.hpp" />
     <ClInclude Include="..\src\mge\util\DebugDraw.hpp" />
     <ClInclude Include="..\src\mge\util\DebugHud.hpp" />
+    <ClInclude Include="..\src\mge\util\TestManager.hpp" />
     <ClInclude Include="..\src\mygame\config.hpp" />
     <ClInclude Include="..\src\mygame\mygame.hpp" />
   </ItemGroup>
@@ -221,6 +222,7 @@
     <ClCompile Include="..\src\mge\MGEDemo.cpp" />
     <ClCompile Include="..\src\mge\util\DebugDraw.cpp" />
     <ClCompile Include="..\src\mge\util\DebugHud.cpp" />
+    <ClCompile Include="..\src\mge\util\TestManager.cpp" />
     <ClCompile Include="..\src\mygame\mygame.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

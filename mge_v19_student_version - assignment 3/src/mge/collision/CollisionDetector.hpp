@@ -11,7 +11,7 @@ class CollisionDetector {
 public:
     CollisionDetector(GameObject* obj1, GameObject* obj2);
     bool checkCollisionOBB();
-    OBB createOBBForGameObject(GameObject* obj);
+    OBB CreateOBBForGameObject(GameObject* obj);
     static bool checkCollisionAABB(const AABB& aabb1, const AABB& aabb2);
 private:
     GameObject* obj1;

@@ -4,14 +4,14 @@
 CollisionDetector::CollisionDetector(GameObject* obj1, GameObject* obj2) : obj1(obj1), obj2(obj2) {}
 
 bool CollisionDetector::checkCollisionOBB() {
-    OBB obb1 = createOBBForGameObject(obj1);
-    OBB obb2 = createOBBForGameObject(obj2);
+    OBB obb1 = CollisionDetector::CreateOBBForGameObject(obj1);
+    OBB obb2 = CollisionDetector::CreateOBBForGameObject(obj2);
 
     return obb1.intersects(obb2);
 }
 
 
-OBB CollisionDetector::createOBBForGameObject(GameObject* obj) {
+OBB CollisionDetector::CreateOBBForGameObject(GameObject* obj) {
     //glm::vec3 center = obj->getWorldPosition();
     //glm::vec3 extents = obj->getScale() * 0.5f; // Assuming the mesh is a unit cube
     //glm::mat3 orientation = glm::mat3(obj->getWorldTransform());
@@ -37,7 +37,6 @@ OBB CollisionDetector::createOBBForGameObject(GameObject* obj) {
     }
     glm::vec3 extents = (maxVertex - minVertex) * 0.5f;
 
-    // Calculate orientation (identity matrix for simplicity, can be enhanced)
     glm::mat3 orientation(1.0f);
 
     return OBB(center, extents, orientation);

@@ -19,8 +19,8 @@ class mygame: public AbstractGame
 
         //override initialize so we can add a DebugHud
         virtual void initialize();
-		OBB createOBBForGameObject(GameObject* obj);
-		AABB computeAABBForGameObject(GameObject* obj);
+		//OBB createOBBForGameObject(GameObject* obj);
+		void mygame::generateRandomObjects(int count);
 	protected:
 	    //override so we can construct the actual scene
         virtual void _initializeScene();
