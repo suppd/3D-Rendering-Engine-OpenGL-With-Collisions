@@ -151,7 +151,7 @@ void mygame::_initializeScene()
     _world->add(light);
     _world->setMainLight(light);
 
-    //Testing!
+
     generateRandomObjects(10);
     TestManager tester;
     tester.RunAllTests(_gameObjects);
@@ -166,7 +166,7 @@ void mygame::_render() {
     _updateHud();
 
     for (GameObject* obj : _gameObjects) {
-        // Draw OBB in red
+        // Draw OBB in blue
         OBB obb = OBB::CreateOBBForGameObject(obj);
         DebugDraw::DrawOBB(obb, glm::vec3(0, 0, 1)); 
 
@@ -175,31 +175,9 @@ void mygame::_render() {
         DebugDraw::DrawAABB(aabb, glm::vec3(0, 1, 0)); 
         //std::cout << "OBB and AABB created for: " << obj->getName() << std::endl;
     }
-    //draw the collision boxes using debug shader
+
     DebugDraw::Render(_world->getMainCamera()->getView(), _world->getMainCamera()->getProjection());
 }
-
-//OBB mygame::createOBBForGameObject(GameObject* obj) {
-//    glm::vec3 center = obj->getWorldPosition();
-//
-//    // Compute local AABB
-//    AABB localAABB = AABB::ComputeLocalAABB(obj->getMesh());
-//    glm::vec3 localExtents = (localAABB.max - localAABB.min) * 0.5f;
-//
-//    // Extract world transform (rotation + scale)
-//    glm::mat3 worldTransform = glm::mat3(obj->getWorldTransform());
-//
-//    // Transform the extents using absolute rotation
-//    glm::vec3 extents = glm::vec3(
-//        glm::length(worldTransform[0] * localExtents),
-//        glm::length(worldTransform[1] * localExtents),
-//        glm::length(worldTransform[2] * localExtents)
-//    );
-//
-//    glm::mat3 orientation = worldTransform;
-//
-//    return OBB(center, extents, orientation);
-//}
 
 
 void mygame::_updateHud() {
@@ -210,33 +188,6 @@ void mygame::_updateHud() {
     _hud->draw();
 }
 
-//void mygame::_checkCollisions() {
-//    for (size_t i = 0; i < _gameObjects.size(); ++i) {
-//        for (size_t j = i + 1; j < _gameObjects.size(); ++j) {
-//            // Check OBB collisions
-//            OBB obb1 = createOBBForGameObject(_gameObjects[i]);
-//            OBB obb2 = createOBBForGameObject(_gameObjects[j]);
-//            DebugDraw::DrawOBB(obb1, glm::vec3(1, 0, 0)); // Red color for OBB
-//            DebugDraw::DrawOBB(obb2, glm::vec3(1, 0, 0)); // Red color for OBB
-//
-//            if (obb1.intersects(obb2)) {
-//              /*  std::cout << "OBB Collision detected between " << _gameObjects[i]->getName()
-//                    << " and " << _gameObjects[j]->getName() << std::endl;*/
-//            }
-//
-//            // Check AABB collisions
-//            AABB aabb1 = AABB::ComputeAABBForGameObject(_gameObjects[i]);
-//            AABB aabb2 = AABB::ComputeAABBForGameObject(_gameObjects[j]);
-//            DebugDraw::DrawAABB(aabb1, glm::vec3(0, 1, 0)); // Green color for AABB
-//            DebugDraw::DrawAABB(aabb2, glm::vec3(0, 1, 0)); // Green color for AABB
-//
-//            if (CollisionDetector::checkCollisionAABB(aabb1, aabb2)) {
-//               /* std::cout << "AABB Collision detected between " << _gameObjects[i]->getName()
-//                    << " and " << _gameObjects[j]->getName() << std::endl;*/
-//            }
-//        }
-//    }
-//}
 void mygame::generateRandomObjects(int count) {
     Mesh* sphereMesh = Mesh::load(config::MGE_MODEL_PATH + "sphere_smooth.obj");
     Mesh* cubeMesh = Mesh::load(config::MGE_MODEL_PATH + "cube_flat.obj");

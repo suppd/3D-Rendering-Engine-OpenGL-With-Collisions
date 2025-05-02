@@ -15,6 +15,7 @@ private:
     static void RunAccuracyTest(const std::vector<GameObject*>& objects);
     static void RunPerformanceTest(const std::vector<GameObject*>& objects);
     static void RunConsistencyTest(const std::vector<GameObject*>& objects);
-    static void RunScalingTest(const std::vector<GameObject*>& objects);
+    //static void RunScalingTest(const std::vector<GameObject*>& objects);
+    static void RunMemoryTest(const std::vector<GameObject*>& objects);
 };
 

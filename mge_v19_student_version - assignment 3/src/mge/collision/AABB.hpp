@@ -16,6 +16,14 @@ public :
     bool Intersects(const AABB& other) const;
     static AABB ComputeLocalAABB(const Mesh* mesh);
     static AABB ComputeAABBForGameObject(GameObject* obj);
+
+    glm::vec3 GetSize() const {
+        return max - min;
+    }
+
+    glm::vec3 GetCenter() const {
+        return (min + max) * 0.5f;
+    }
 };
 
 #endif

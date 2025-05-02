@@ -8,7 +8,7 @@ void TestManager::RunAllTests(const std::vector<GameObject*>& objects) {
     RunAccuracyTest(objects);
     RunPerformanceTest(objects);
     RunConsistencyTest(objects);
-    //RunScalingTest(objects);
+    RunMemoryTest(objects);
 }
 
 // ----------------------------
@@ -112,27 +112,60 @@ void TestManager::RunPerformanceTest(const std::vector<GameObject*>& objects) {
 // CONSISTENCY = repeat and verify stability
 // ----------------------------
 void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
-    std::cout << "\n--- CONSISTENCY TEST (OBB Stability) ---\n";
+    std::cout << "\n--- CONSISTENCY TEST (AABB vs OBB Stability) ---\n";
+    std::cout << std::fixed << std::setprecision(4);
 
     for (GameObject* obj : objects) {
-        if (!obj) continue;
+        if (!obj || !obj->getMesh()) continue;
 
-        // Generate OBBs twice to check consistency
+        // ========================================================================
+        // OBB Consistency Checks (Existing)
+        // ========================================================================
         OBB obb1 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
         OBB obb2 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
 
-        // Calculate differences
-        float centerDiff = glm::distance(obb1.center, obb2.center);
-        float extentsDiff = glm::distance(obb1.extents, obb2.extents);
+        float obbCenterDrift = glm::distance(obb1.center, obb2.center);
+        float obbExtentsDrift = glm::distance(obb1.extents, obb2.extents);
+        glm::quat obbRot1 = glm::quat_cast(obb1.orientation);
+        glm::quat obbRot2 = glm::quat_cast(obb2.orientation);
+        float obbAngleDrift = glm::degrees(glm::angle(obbRot1 * glm::inverse(obbRot2)));
 
-        // Orientation difference
-        glm::quat rot1 = glm::quat_cast(obb1.orientation);
-        glm::quat rot2 = glm::quat_cast(obb2.orientation);
-        float angleDiff = glm::degrees(glm::angle(rot1 * glm::inverse(rot2)));
+        // ========================================================================
+        // New AABB Consistency Checks
+        // ========================================================================
+        AABB aabb1 = AABB::ComputeAABBForGameObject(obj);
+        AABB aabb2 = AABB::ComputeAABBForGameObject(obj);  // Recompute to check consistency
 
+        float aabbCenterDrift = glm::distance(aabb1.GetCenter(), aabb2.GetCenter());
+        float aabbExtentsDrift = glm::distance(aabb1.GetSize(), aabb2.GetSize());
+
+        // ========================================================================
+        // Results Output
+        // ========================================================================
         std::cout << "Object: " << obj->getName() << "\n"
-            << "  Center Drift: " << centerDiff << " units\n"
-            << "  Extents Drift: " << extentsDiff << " units\n"
-            << "  Rotation Drift: " << angleDiff << " degrees\n";
+            << "  [OBB]\n"
+            << "    Center Drift: " << obbCenterDrift << " units\n"
+            << "    Extents Drift: " << obbExtentsDrift << " units\n"
+            << "    Rotation Drift: " << obbAngleDrift << " degrees\n"
+            << "  [AABB]\n"
+            << "    Center Drift: " << aabbCenterDrift << " units\n"
+            << "    Extents Drift: " << aabbExtentsDrift << " units\n"
+            << "    (AABBs have no rotation drift)\n";
     }
+}
+
+void TestManager::RunMemoryTest(const std::vector<GameObject*>& objects) {
+    std::cout << "\n--- MEMORY USAGE TEST ---\n";
+
+    size_t aabbMemory = 0;
+    size_t obbMemory = 0;
+
+    for (auto obj : objects) {
+        aabbMemory += sizeof(AABB::ComputeAABBForGameObject(obj));
+        obbMemory += sizeof(CollisionDetector(obj, obj).CreateOBBForGameObject(obj));
+    }
+
+    std::cout << "Total AABB Memory: " << aabbMemory << " bytes\n"
+        << "Total OBB Memory: " << obbMemory << " bytes\n"
+        << "OBB/AABB Memory Ratio: " << (float)obbMemory / aabbMemory << "x\n";
 }

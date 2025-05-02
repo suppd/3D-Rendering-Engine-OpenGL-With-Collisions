@@ -85,7 +85,7 @@ bool OBB::intersects(const OBB& other) const {
 }
 
 float OBB::getVolume() {
-    return 8.0f * extents.x * extents.y * extents.z;
+    return 2.0f * extents.x * extents.y * extents.z;
 }
 
 OBB OBB::CreateOBBForGameObject(GameObject* obj) {

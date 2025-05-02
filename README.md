@@ -1,13 +1,18 @@
-# 3D Rendering Engine OpenGL With Collisions
+#h1 3D Rendering Engine OpenGL With Collisions
 
-1. Description
+## Description & Justification
 
-2. Evaluation Proposal
+
+## Evaluation Proposal
 "Benchmark accuracy, speed, memory usage, consistency, (scaling) performance OBB vs AABB colission systems in a simple OpenGL rendering engine"
 
-3. Turtorials Used
+## Turtorials Used
+
 [AABB Tutorial](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection)
-4. My Setup
+
+[OBB Tutorial](https://github.com/juj/MathGeoLib/blob/master/src/Geometry/OBB.cpp)
+## My Setup
+
 [CPU: Intel(R) Core(TM) i7-14700KF](https://www.intel.com/content/www/us/en/products/sku/236789/intel-core-i7-processor-14700kf-33m-cache-up-to-5-60-ghz/specifications.html)
 
 [RAM: 32GB DDR4 3600HZ](https://azerty.nl/product/corsair-vengeance-lpx-geheugen/4069527)
@@ -16,10 +21,18 @@
 
 [Motherboard: ASUS TUF GAMING B760M-PLUS WIFI D4](https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus-wifi-d4/)
 
-5. Test Procedure
+OS: Windows 10 64-bit
 
-6. Test Results
+[IDE: Microsoft Visual Studio Community 2022 (64-bit)](https://visualstudio.microsoft.com/vs/community/)
 
-7. Results Analysis
+## Test Procedure
 
-8. Conclusion & Final Thoughts
+My testing procedure is setup within the code, I will run a few diffrent scenarios all with the same random seed.
+My Objective is to compare diffrent benchmarks between my AABB and OBB setups and see how well they do compared to each other.
+
+
+## Test Results
+
+## Results Analysis
+
+## Conclusion & Final Thoughts
