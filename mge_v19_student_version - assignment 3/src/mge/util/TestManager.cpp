@@ -1,14 +1,16 @@
 ﻿#include "mge/util/TestManager.hpp"
-#include <chrono>
-#include <iostream>
-#include <random>
 
+
+std::ofstream TestManager::testResults;
 
 void TestManager::RunAllTests(const std::vector<GameObject*>& objects) {
+    TestManager tester;
+    tester.OpenFile("Test Results.txt");
     RunAccuracyTest(objects);
     RunPerformanceTest(objects);
     RunConsistencyTest(objects);
     RunMemoryTest(objects);
+    tester.CloseFile();
 }
 
 // ----------------------------
@@ -44,16 +46,18 @@ void TestManager::RunAccuracyTest(const std::vector<GameObject*>& objects) {
         float obbVolume = obb.getVolume();
         float obbError = (obbVolume - meshVolume) / meshVolume;
 
-
-        std::cout << "Object: " << obj->getName()
+        std::ostringstream line;
+        line << "Object: " << obj->getName()
             << " | AABB Wasted Space: " << aabbError * 100 << "%"
             << " | OBB Wasted Space: " << obbError * 100 << "%\n";
+        std::cout << line.str();
+        TestManager::WriteLine(line.str());
         // Percentages represent, wasted space +32% for example is when the collission box is 32% too big compared to the mesh -40% then its too small
 
     }
 }
 // ----------------------------
-// PERFORMANCE = measure speed
+// PERFORMANCE = measure speed over x amount of iterations
 // ----------------------------
 void TestManager::RunPerformanceTest(const std::vector<GameObject*>& objects) {
     std::cout << "\n--- PERFORMANCE TEST (AABB vs OBB) ---\n";
@@ -79,7 +83,6 @@ void TestManager::RunPerformanceTest(const std::vector<GameObject*>& objects) {
     float aabbDurationMs =
         std::chrono::duration_cast<std::chrono::milliseconds>(aabbEnd - aabbStart).count();
 
-    // OBB Test
     auto obbStart = std::chrono::high_resolution_clock::now();
     for (int i = 0; i < iterations; ++i) {
         for (size_t a = 0; a < objects.size(); ++a) {
@@ -95,21 +98,30 @@ void TestManager::RunPerformanceTest(const std::vector<GameObject*>& objects) {
     float obbDurationMs =
         std::chrono::duration_cast<std::chrono::milliseconds>(obbEnd - obbStart).count();
 
-    // Results
-    std::cout << "AABB Results:\n"
+    std::ostringstream line;
+
+    line << "AABB Results:\n"
         << "  Collisions: " << aabbCollisions << "\n"
         << "  Total Time: " << aabbDurationMs << " ms\n"
         << "  Avg Time/Check: " << aabbDurationMs / (iterations * objects.size() * (objects.size() - 1)) << " ms\n\n";
 
-    std::cout << "OBB Results:\n"
+    std::cout << line.str();
+    TestManager::WriteLine(line.str());
+
+    // might not be best approach but im lazy and want to make sure i dont have issues here
+    std::ostringstream line2;
+    line2 << "OBB Results:\n"
         << "  Collisions: " << obbCollisions << "\n"
         << "  Total Time: " << obbDurationMs << " ms\n"
         << "  Avg Time/Check: " << obbDurationMs / (iterations * objects.size() * (objects.size() - 1)) << " ms\n\n";
 
+    std::cout << line2.str();
+    TestManager::WriteLine(line2.str());
+
     std::cout << "OBB is " << obbDurationMs / aabbDurationMs << "x slower than AABB\n";
 }
 // ----------------------------
-// CONSISTENCY = repeat and verify stability
+// CONSISTENCY = Check how consistent collision boxes are
 // ----------------------------
 void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
     std::cout << "\n--- CONSISTENCY TEST (AABB vs OBB Stability) ---\n";
@@ -119,7 +131,7 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
         if (!obj || !obj->getMesh()) continue;
 
         // ========================================================================
-        // OBB Consistency Checks (Existing)
+        // OBB Consistency Checks
         // ========================================================================
         OBB obb1 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
         OBB obb2 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
@@ -131,10 +143,10 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
         float obbAngleDrift = glm::degrees(glm::angle(obbRot1 * glm::inverse(obbRot2)));
 
         // ========================================================================
-        // New AABB Consistency Checks
+        // AABB Consistency Checks
         // ========================================================================
         AABB aabb1 = AABB::ComputeAABBForGameObject(obj);
-        AABB aabb2 = AABB::ComputeAABBForGameObject(obj);  // Recompute to check consistency
+        AABB aabb2 = AABB::ComputeAABBForGameObject(obj);
 
         float aabbCenterDrift = glm::distance(aabb1.GetCenter(), aabb2.GetCenter());
         float aabbExtentsDrift = glm::distance(aabb1.GetSize(), aabb2.GetSize());
@@ -142,7 +154,8 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
         // ========================================================================
         // Results Output
         // ========================================================================
-        std::cout << "Object: " << obj->getName() << "\n"
+        std::ostringstream line;
+        line << "Object: " << obj->getName() << "\n"
             << "  [OBB]\n"
             << "    Center Drift: " << obbCenterDrift << " units\n"
             << "    Extents Drift: " << obbExtentsDrift << " units\n"
@@ -151,8 +164,14 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
             << "    Center Drift: " << aabbCenterDrift << " units\n"
             << "    Extents Drift: " << aabbExtentsDrift << " units\n"
             << "    (AABBs have no rotation drift)\n";
+
+        std::cout << line.str();
+        TestManager::WriteLine(line.str());
     }
 }
+// ----------------------------
+// MEMORY  = Check memory usage between collision versions
+// ----------------------------
 
 void TestManager::RunMemoryTest(const std::vector<GameObject*>& objects) {
     std::cout << "\n--- MEMORY USAGE TEST ---\n";
@@ -164,8 +183,25 @@ void TestManager::RunMemoryTest(const std::vector<GameObject*>& objects) {
         aabbMemory += sizeof(AABB::ComputeAABBForGameObject(obj));
         obbMemory += sizeof(CollisionDetector(obj, obj).CreateOBBForGameObject(obj));
     }
+    std::ostringstream line;
 
-    std::cout << "Total AABB Memory: " << aabbMemory << " bytes\n"
+    line << "Total AABB Memory: " << aabbMemory << " bytes\n"
         << "Total OBB Memory: " << obbMemory << " bytes\n"
         << "OBB/AABB Memory Ratio: " << (float)obbMemory / aabbMemory << "x\n";
+
+    std::cout << line.str();
+    TestManager::WriteLine(line.str());
+}
+
+void TestManager::OpenFile(const std::string& filename) {
+    testResults.open(filename);
+    testResults << "TEST RESULTS AABB OBB PROTOTYPE\n";
+}
+void TestManager::WriteLine(const std::string& line) {
+    if (testResults.is_open()) {
+        testResults << line;
+    }
+}
+void TestManager::CloseFile() {
+    testResults.close();
 }

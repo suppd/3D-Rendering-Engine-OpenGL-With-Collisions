@@ -42,7 +42,7 @@ void mygame::initialize() {
 	std::cout << "Initializing HUD" << std::endl;
 	_hud = new DebugHud(_window);
 	std::cout << "HUD initialized." << std::endl << std::endl;
-    srand(10399); //always same seed
+    srand(10399); //always same fixed seed
 }
 
 //build the game _world
@@ -76,9 +76,6 @@ void mygame::_initializeScene()
     // Assuming you have a SkyboxMaterial and SkyboxShader
     AbstractMaterial* skyboxMaterial = new TextureMaterial(Texture::load(config::MGE_TEXTURE_PATH + "skybox.png"), camera);
 
-
-
-
     //SCENE SETUP
 
    //add camera first (it will be updated last)
@@ -87,60 +84,6 @@ void mygame::_initializeScene()
     camera->setLocalPosition(glm::vec3(0, 5,5));
     _world->add(camera);
     _world->setMainCamera(camera);
-
-
-    ////non nested objects
-    //GameObject* environmentSphere = new GameObject("EnSphere", glm::vec3(0, 0, 0));
-    //environmentSphere->scale(glm::vec3(1, 1, 1));
-    //environmentSphere->setLocalPosition(glm::vec3(1, 0, 0));
-    //environmentSphere->setMesh(sphereMeshS);
-    //environmentSphere->setMaterial(brickMaterial);
-    //_world->add(environmentSphere);
-    //_gameObjects.push_back(environmentSphere);
-
-    ////add the plane
-    //GameObject* plane = new GameObject ("plane", glm::vec3(0,0,0));
-    //plane->scale(glm::vec3(1,1,1));
-    //plane->setMesh(planeMeshDefault);
-    //plane->setMaterial(runicStoneMaterial);
-    //plane->setBehaviour(new KeysBehaviour());
-    //_world->add(plane);
-    //_gameObjects.push_back(plane);
-    //camera->setParent(plane);
-
-    ////add a sphere
-    ////GameObject* sphere = new GameObject ("sphere", glm::vec3(0,0,0));
-    ////sphere->scale(glm::vec3(0.4,0.4,0.4));
-    ////sphere->setLocalPosition(glm::vec3(1, 0, 1));
-    ////sphere->setMesh (sphereMeshS);
-    ////sphere->setMaterial(runicStoneMaterial);
-    //////sphere->setParent(plane);
-    ////_world->add(sphere);
-    ////_gameObjects.push_back(sphere);
-
-    //GameObject* sphere = new GameObject("sphere", glm::vec3(0, 0, 0));
-    //sphere->setMesh(sphereMeshS);
-    //sphere->setLocalPosition(glm::vec3(0, 2, 0));
-    //sphere->scale(glm::vec3(0.4f, 0.4f, 0.4f)); // No scaling
-    //sphere->setMaterial(runicStoneMaterial);
-    //_world->add(sphere);
-    //_gameObjects.push_back(sphere);
-
-    ////add a teapot 
-    //GameObject* teapot = new GameObject("teapot", glm::vec3(0, 0, 0));
-    //teapot->scale(glm::vec3(0.4, 0.4, 0.4));
-    //teapot->setLocalPosition(glm::vec3(0, 2, 0));
-    //teapot->setMesh(teampotMeshS);
-    //teapot->setBehaviour(new RotatingBehaviour());
-    //teapot->setMaterial(redMaterial);
-    ////teapot->setParent(plane);
-    //_world->add(teapot);
-    //_gameObjects.push_back(teapot);
-
-    ////plane->add(teapot);
-    //plane->add(sphere);
-
-
 
     Light* light = new Light("light", glm::vec3(3,6,0));
     light->scale(glm::vec3(0.1f, 0.1f, 0.1f));
@@ -156,7 +99,7 @@ void mygame::_initializeScene()
     TestManager tester;
     tester.RunAllTests(_gameObjects);
     camera->setBehaviour(new CamKeysBehaviour());
-    camera->setBehaviourTarget(light, camera->getBehaviour());
+    camera->setBehaviourTarget(_gameObjects[0], camera->getBehaviour());
 
 }
 
@@ -165,6 +108,7 @@ void mygame::_render() {
     AbstractGame::_render();
     _updateHud();
 
+    //do debug drawing of OBB and AABB to visualize them
     for (GameObject* obj : _gameObjects) {
         // Draw OBB in blue
         OBB obb = OBB::CreateOBBForGameObject(obj);
@@ -204,8 +148,9 @@ void mygame::generateRandomObjects(int count) {
 
         // Random scale 
         float scale = (rand() % 100) / 100.0f + 0.5f;
-
-        Mesh* mesh = (i % 2 == 0) ? teapotMesh : cubeMesh;
+        //for creating 50/50 of two types of meshes
+        Mesh* mesh = (i % 2 == 0) ? cubeMesh : cubeMesh;
+        //Give the specific meshes uniform colors
         AbstractMaterial* mat = (i % 2 == 0) ? redMaterial : greenMaterial;
 
         GameObject* obj = new GameObject("randObj_" + std::to_string(i), glm::vec3(0));
@@ -213,6 +158,8 @@ void mygame::generateRandomObjects(int count) {
         obj->setMaterial(mat);
         obj->setLocalPosition(glm::vec3(x, y, z));
         obj->scale(glm::vec3(scale));
+        //for rotating object
+        // obj->setBehaviour(new RotatingBehaviour());
         _world->add(obj);
         _gameObjects.push_back(obj);
     }

@@ -11,6 +11,11 @@
 [AABB Tutorial](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_collision_detection)
 
 [OBB Tutorial](https://github.com/juj/MathGeoLib/blob/master/src/Geometry/OBB.cpp)
+
+[Chrono Library (for testing)] (https://en.cppreference.com/w/cpp/chrono)
+
+[Writing To Text File C++] (https://stackoverflow.com/questions/72493490/trying-creating-and-writing-into-a-txt-file-in-c)
+
 ## My Setup
 
 [CPU: Intel(R) Core(TM) i7-14700KF](https://www.intel.com/content/www/us/en/products/sku/236789/intel-core-i7-processor-14700kf-33m-cache-up-to-5-60-ghz/specifications.html)
