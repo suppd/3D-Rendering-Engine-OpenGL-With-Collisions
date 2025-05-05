@@ -51,21 +51,73 @@ The tests are:
 
 •	Test With 100 Spheres Rotated
 
+What is being tested per catagory?
 
+Accuracy: Testing how well the generated collision box (AABB&OBB) fits around the target mesh and how much space is "wasted" meaning that if 10% space is wasted the box is 10% bigger than the actual mesh.
+And -10% would mean it's too small, how i calculate this is: (collision box volume - mesh volume / mesh volume).
 
+Speed: For the speed testing i basically run a loop with x amount of iteration (this is what 100_ITE / 1000_ITE means), over the randomly generated objects and their corresponding AABB & OBB box and check per collision box how long it takes to compute.
+
+Consistency: The way I test consistency is again with a loop but this time i generate 2 boxes of both collision types per object and check the numerical diffrences between them if there are any, to see how consistent the generating is.
+
+Memory Usage: I basically just check the size of the generate boxes (in lists), and then put them in a ratio OBB vs AABB.
 
 ## Test Results
-
+These test results consist of the folling categories: accuracy, performance, consistency and memory.
+I have a diffrent text file for each single test and iteration amount I used AI to summarize these as it would be impossible to do this as a human.
 Here are the results for the Cube Tests:
 
-Inline-style: 
-
+###Cube Graphs Containing Accuracy & Performance:
 ![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Cubes.png "Cubes Graph")
 
-Here are the results for the Sphere Tests:
+####Consistency:
+Non-Rotated Cubes (100_CUBES_*_ITE.txt):
 
-![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Spheres.png "Cubes Graph"
+OBB Drifts: 0° perfect consistency, no rotation/position/size deviations.
 
+AABB Drifts: 0° always stable, because AABBs don’t rotate.
+
+Rotated Cubes (100_CUBES_*_ITE_ROTATED.txt):
+
+OBB Drifts: Minor rotation drifts (max 0.056°, avg ~0.04°) in 7–9/100 cubes.
+
+AABB Drifts: 0° no drifts
+
+####Memory:
+
+In all of the tests the memory consumption was the same for both AABB & OBB
+
+Total AABB Memory: 2400 bytes
+
+Total OBB Memory: 6000 bytes
+
+OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
+
+
+###Sphere Graphs Containing Accuracy & Performance:
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Spheres.png "Spheres Graph")
+
+####Consistency:
+For the consistency I originally was printing a lot of line but decided to implement a threshold so i got rid of all 0 values since theyre not really relevant.
+Non-Rotated Spheres (100_SPHERES_*_ITE.txt):
+
+OBB & AABB Drifts: 0° perfect fits.
+
+Rotated Spheres (100_SPHERES_*_ITE_ROTATED.txt):
+
+OBB Drifts: Tiny rotation drifts (max 0.056°) in a few objects.
+
+AABB Drifts: 0° perfect fits.
+
+####Memory:
+
+In all of the tests the memory consumption was the same for both AABB & OBB
+
+Total AABB Memory: 2400 bytes
+
+Total OBB Memory: 6000 bytes
+
+OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 
 ## Results Analysis
 
