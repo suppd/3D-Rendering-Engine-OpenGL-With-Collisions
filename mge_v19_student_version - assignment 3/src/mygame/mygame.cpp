@@ -149,10 +149,10 @@ void mygame::generateRandomObjects(int count) {
         float y = (rand() % 200) / 10.0f;      // [0, 20]
         float z = (rand() % 400 - 200) / 5.0f; // [-40, 40]
         // scale 
-        // float scale = (0.5f);
-        float scale = (rand() % 100) / 100.0f + 0.5f; // [0.5,1.5]
+         float scale = (1.0f);
+        //float scale = (rand() % 100) / 100.0f + 0.5f; // [0.5,1.5]
         //choose mesh
-        Mesh* mesh = sphereMesh; 
+        Mesh* mesh = cubeMesh; 
         // (i % 2 == 0) ? cubeMesh : sphereMesh;
         //Give the specific meshes uniform colors
         AbstractMaterial* mat = redMaterial; 
@@ -165,7 +165,7 @@ void mygame::generateRandomObjects(int count) {
         obj->scale(glm::vec3(scale));
 
         //random rotation
-        float angle = (rand() % 360);
+        //float angle = (rand() % 360);
         //obj->rotate(glm::radians(angle), glm::vec3(1.0f, 0.0f, 0.0f));
 
         _world->add(obj);

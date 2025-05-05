@@ -20,8 +20,9 @@ public:
     static void RunPerformanceTest(const std::vector<GameObject*>& objects);
     static void RunConsistencyTest(const std::vector<GameObject*>& objects);
     static void RunMemoryTest(const std::vector<GameObject*>& objects);
-private:
 
+
+private:
     static std::ofstream testResults;
     static void OpenFile(const std::string& filename);
     static void TestManager::WriteLine(const std::string& line);

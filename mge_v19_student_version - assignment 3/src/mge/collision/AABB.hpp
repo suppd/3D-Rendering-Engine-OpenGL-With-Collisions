@@ -24,6 +24,11 @@ public :
     glm::vec3 GetCenter() const {
         return (min + max) * 0.5f;
     }
+
+    float getVolume() const {
+        glm::vec3 size = max - min;
+        return size.x * size.y * size.z;
+    }
 };
 
 #endif

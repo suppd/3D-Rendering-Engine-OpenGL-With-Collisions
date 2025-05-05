@@ -1,0 +1,1011 @@
+TEST RESULTS AABB OBB PROTOTYPE
+Object: randObj_0 | Mesh Vol: 8.00000 | AABB Vol: 15.87846 | OBB Vol: 8.00000 | AABB Wasted Space: 98.48081% | OBB Wasted Space: 0.00000%
+Object: randObj_1 | Mesh Vol: 8.00000 | AABB Vol: 12.70229 | OBB Vol: 8.00000 | AABB Wasted Space: 58.77862% | OBB Wasted Space: -0.00001%
+Object: randObj_2 | Mesh Vol: 8.00000 | AABB Vol: 14.12836 | OBB Vol: 8.00000 | AABB Wasted Space: 76.60450% | OBB Wasted Space: 0.00000%
+Object: randObj_3 | Mesh Vol: 8.00000 | AABB Vol: 15.92215 | OBB Vol: 8.00000 | AABB Wasted Space: 99.02689% | OBB Wasted Space: -0.00001%
+Object: randObj_4 | Mesh Vol: 8.00000 | AABB Vol: 15.60843 | OBB Vol: 8.00000 | AABB Wasted Space: 95.10543% | OBB Wasted Space: 0.00000%
+Object: randObj_5 | Mesh Vol: 8.00000 | AABB Vol: 14.47214 | OBB Vol: 8.00000 | AABB Wasted Space: 80.90176% | OBB Wasted Space: -0.00001%
+Object: randObj_6 | Mesh Vol: 8.00000 | AABB Vol: 9.11338 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91724% | OBB Wasted Space: 0.00000%
+Object: randObj_7 | Mesh Vol: 8.00000 | AABB Vol: 15.60845 | OBB Vol: 8.00000 | AABB Wasted Space: 95.10557% | OBB Wasted Space: -0.00001%
+Object: randObj_8 | Mesh Vol: 8.00000 | AABB Vol: 13.55727 | OBB Vol: 8.00000 | AABB Wasted Space: 69.46591% | OBB Wasted Space: 0.00000%
+Object: randObj_9 | Mesh Vol: 8.00000 | AABB Vol: 9.66330 | OBB Vol: 8.00000 | AABB Wasted Space: 20.79121% | OBB Wasted Space: -0.00001%
+Object: randObj_10 | Mesh Vol: 8.00000 | AABB Vol: 8.83622 | OBB Vol: 8.00000 | AABB Wasted Space: 10.45277% | OBB Wasted Space: 0.00000%
+Object: randObj_11 | Mesh Vol: 8.00000 | AABB Vol: 14.78440 | OBB Vol: 8.00000 | AABB Wasted Space: 84.80495% | OBB Wasted Space: -0.00001%
+Object: randObj_12 | Mesh Vol: 8.00000 | AABB Vol: 11.75577 | OBB Vol: 8.00000 | AABB Wasted Space: 46.94717% | OBB Wasted Space: 0.00000%
+Object: randObj_13 | Mesh Vol: 8.00000 | AABB Vol: 10.99685 | OBB Vol: 8.00000 | AABB Wasted Space: 37.46056% | OBB Wasted Space: 0.00000%
+Object: randObj_14 | Mesh Vol: 8.00000 | AABB Vol: 15.19034 | OBB Vol: 8.00000 | AABB Wasted Space: 89.87927% | OBB Wasted Space: 0.00000%
+Object: randObj_15 | Mesh Vol: 8.00000 | AABB Vol: 15.95617 | OBB Vol: 8.00000 | AABB Wasted Space: 99.45219% | OBB Wasted Space: 0.00000%
+Object: randObj_16 | Mesh Vol: 8.00000 | AABB Vol: 15.19036 | OBB Vol: 8.00000 | AABB Wasted Space: 89.87954% | OBB Wasted Space: 0.00000%
+Object: randObj_17 | Mesh Vol: 8.00000 | AABB Vol: 15.99999 | OBB Vol: 8.00000 | AABB Wasted Space: 99.99991% | OBB Wasted Space: -0.00001%
+Object: randObj_18 | Mesh Vol: 8.00000 | AABB Vol: 15.87847 | OBB Vol: 8.00000 | AABB Wasted Space: 98.48092% | OBB Wasted Space: -0.00001%
+Object: randObj_19 | Mesh Vol: 8.00000 | AABB Vol: 15.76235 | OBB Vol: 8.00000 | AABB Wasted Space: 97.02943% | OBB Wasted Space: 0.00000%
+Object: randObj_20 | Mesh Vol: 8.00000 | AABB Vol: 14.30409 | OBB Vol: 8.00000 | AABB Wasted Space: 78.80116% | OBB Wasted Space: 0.00000%
+Object: randObj_21 | Mesh Vol: 8.00000 | AABB Vol: 9.11339 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91736% | OBB Wasted Space: 0.00000%
+Object: randObj_22 | Mesh Vol: 8.00000 | AABB Vol: 15.82518 | OBB Vol: 8.00000 | AABB Wasted Space: 97.81480% | OBB Wasted Space: -0.00001%
+Object: randObj_23 | Mesh Vol: 8.00000 | AABB Vol: 14.63231 | OBB Vol: 8.00000 | AABB Wasted Space: 82.90382% | OBB Wasted Space: 0.00000%
+Object: randObj_24 | Mesh Vol: 8.00000 | AABB Vol: 12.92529 | OBB Vol: 8.00000 | AABB Wasted Space: 61.56614% | OBB Wasted Space: -0.00001%
+Object: randObj_25 | Mesh Vol: 8.00000 | AABB Vol: 15.95617 | OBB Vol: 8.00000 | AABB Wasted Space: 99.45219% | OBB Wasted Space: -0.00001%
+Object: randObj_26 | Mesh Vol: 8.00000 | AABB Vol: 15.41746 | OBB Vol: 8.00000 | AABB Wasted Space: 92.71821% | OBB Wasted Space: -0.00001%
+Object: randObj_27 | Mesh Vol: 8.00000 | AABB Vol: 15.51755 | OBB Vol: 8.00000 | AABB Wasted Space: 93.96933% | OBB Wasted Space: 0.00000%
+Object: randObj_28 | Mesh Vol: 8.00000 | AABB Vol: 13.35305 | OBB Vol: 8.00000 | AABB Wasted Space: 66.91313% | OBB Wasted Space: 0.00000%
+Object: randObj_29 | Mesh Vol: 8.00000 | AABB Vol: 15.95617 | OBB Vol: 8.00000 | AABB Wasted Space: 99.45216% | OBB Wasted Space: 0.00000%
+Object: randObj_30 | Mesh Vol: 8.00000 | AABB Vol: 9.66328 | OBB Vol: 8.00000 | AABB Wasted Space: 20.79099% | OBB Wasted Space: 0.00000%
+Object: randObj_31 | Mesh Vol: 8.00000 | AABB Vol: 9.11338 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91722% | OBB Wasted Space: 0.00000%
+Object: randObj_32 | Mesh Vol: 8.00000 | AABB Vol: 13.14230 | OBB Vol: 8.00000 | AABB Wasted Space: 64.27870% | OBB Wasted Space: 0.00000%
+Object: randObj_33 | Mesh Vol: 8.00000 | AABB Vol: 10.73615 | OBB Vol: 8.00000 | AABB Wasted Space: 34.20189% | OBB Wasted Space: -0.00001%
+Object: randObj_34 | Mesh Vol: 8.00000 | AABB Vol: 8.83624 | OBB Vol: 8.00000 | AABB Wasted Space: 10.45301% | OBB Wasted Space: 0.00000%
+Object: randObj_35 | Mesh Vol: 8.00000 | AABB Vol: 15.30837 | OBB Vol: 8.00000 | AABB Wasted Space: 91.35464% | OBB Wasted Space: -0.00001%
+Object: randObj_36 | Mesh Vol: 8.00000 | AABB Vol: 15.76237 | OBB Vol: 8.00000 | AABB Wasted Space: 97.02960% | OBB Wasted Space: 0.00000%
+Object: randObj_37 | Mesh Vol: 8.00000 | AABB Vol: 12.23936 | OBB Vol: 8.00000 | AABB Wasted Space: 52.99201% | OBB Wasted Space: 0.00000%
+Object: randObj_38 | Mesh Vol: 8.00000 | AABB Vol: 10.20509 | OBB Vol: 8.00000 | AABB Wasted Space: 27.56363% | OBB Wasted Space: -0.00001%
+Object: randObj_39 | Mesh Vol: 8.00000 | AABB Vol: 15.51756 | OBB Vol: 8.00000 | AABB Wasted Space: 93.96949% | OBB Wasted Space: -0.00001%
+Object: randObj_40 | Mesh Vol: 8.00000 | AABB Vol: 12.47354 | OBB Vol: 8.00000 | AABB Wasted Space: 55.91925% | OBB Wasted Space: 0.00000%
+Object: randObj_41 | Mesh Vol: 8.00000 | AABB Vol: 10.47214 | OBB Vol: 8.00000 | AABB Wasted Space: 30.90171% | OBB Wasted Space: 0.00000%
+Object: randObj_42 | Mesh Vol: 8.00000 | AABB Vol: 15.41746 | OBB Vol: 8.00000 | AABB Wasted Space: 92.71828% | OBB Wasted Space: 0.00000%
+Object: randObj_43 | Mesh Vol: 8.00000 | AABB Vol: 10.47214 | OBB Vol: 8.00000 | AABB Wasted Space: 30.90171% | OBB Wasted Space: -0.00001%
+Object: randObj_44 | Mesh Vol: 8.00000 | AABB Vol: 9.11337 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91717% | OBB Wasted Space: 0.00000%
+Object: randObj_45 | Mesh Vol: 8.00000 | AABB Vol: 12.92528 | OBB Vol: 8.00000 | AABB Wasted Space: 61.56602% | OBB Wasted Space: 0.00000%
+Object: randObj_46 | Mesh Vol: 8.00000 | AABB Vol: 10.20511 | OBB Vol: 8.00000 | AABB Wasted Space: 27.56386% | OBB Wasted Space: -0.00002%
+Object: randObj_47 | Mesh Vol: 8.00000 | AABB Vol: 15.98051 | OBB Vol: 8.00000 | AABB Wasted Space: 99.75639% | OBB Wasted Space: -0.00002%
+Object: randObj_48 | Mesh Vol: 8.00000 | AABB Vol: 10.47213 | OBB Vol: 8.00000 | AABB Wasted Space: 30.90165% | OBB Wasted Space: -0.00001%
+Object: randObj_49 | Mesh Vol: 8.00000 | AABB Vol: 14.30405 | OBB Vol: 8.00000 | AABB Wasted Space: 78.80064% | OBB Wasted Space: 0.00000%
+Object: randObj_50 | Mesh Vol: 8.00000 | AABB Vol: 10.47213 | OBB Vol: 8.00000 | AABB Wasted Space: 30.90161% | OBB Wasted Space: -0.00001%
+Object: randObj_51 | Mesh Vol: 8.00000 | AABB Vol: 15.41747 | OBB Vol: 8.00000 | AABB Wasted Space: 92.71833% | OBB Wasted Space: 0.00000%
+Object: randObj_52 | Mesh Vol: 8.00000 | AABB Vol: 14.63231 | OBB Vol: 8.00000 | AABB Wasted Space: 82.90384% | OBB Wasted Space: 0.00000%
+Object: randObj_53 | Mesh Vol: 8.00000 | AABB Vol: 15.19035 | OBB Vol: 8.00000 | AABB Wasted Space: 89.87942% | OBB Wasted Space: 0.00000%
+Object: randObj_54 | Mesh Vol: 8.00000 | AABB Vol: 15.30838 | OBB Vol: 8.00000 | AABB Wasted Space: 91.35471% | OBB Wasted Space: -0.00001%
+Object: randObj_55 | Mesh Vol: 8.00000 | AABB Vol: 15.69008 | OBB Vol: 8.00000 | AABB Wasted Space: 96.12602% | OBB Wasted Space: 0.00000%
+Object: randObj_56 | Mesh Vol: 8.00000 | AABB Vol: 15.95617 | OBB Vol: 8.00000 | AABB Wasted Space: 99.45217% | OBB Wasted Space: -0.00001%
+Object: randObj_57 | Mesh Vol: 8.00000 | AABB Vol: 12.92529 | OBB Vol: 8.00000 | AABB Wasted Space: 61.56614% | OBB Wasted Space: 0.00000%
+Object: randObj_58 | Mesh Vol: 8.00000 | AABB Vol: 13.75475 | OBB Vol: 8.00000 | AABB Wasted Space: 71.93433% | OBB Wasted Space: -0.00001%
+Object: randObj_59 | Mesh Vol: 8.00000 | AABB Vol: 15.76237 | OBB Vol: 8.00000 | AABB Wasted Space: 97.02959% | OBB Wasted Space: 0.00000%
+Object: randObj_60 | Mesh Vol: 8.00000 | AABB Vol: 15.98052 | OBB Vol: 8.00000 | AABB Wasted Space: 99.75653% | OBB Wasted Space: 0.00000%
+Object: randObj_61 | Mesh Vol: 8.00000 | AABB Vol: 14.63229 | OBB Vol: 8.00000 | AABB Wasted Space: 82.90356% | OBB Wasted Space: 0.00000%
+Object: randObj_62 | Mesh Vol: 8.00000 | AABB Vol: 13.94516 | OBB Vol: 8.00000 | AABB Wasted Space: 74.31446% | OBB Wasted Space: 0.00000%
+Object: randObj_63 | Mesh Vol: 8.00000 | AABB Vol: 15.41746 | OBB Vol: 8.00000 | AABB Wasted Space: 92.71821% | OBB Wasted Space: 0.00000%
+Object: randObj_64 | Mesh Vol: 8.00000 | AABB Vol: 9.93538 | OBB Vol: 8.00000 | AABB Wasted Space: 24.19223% | OBB Wasted Space: 0.00000%
+Object: randObj_65 | Mesh Vol: 8.00000 | AABB Vol: 13.94516 | OBB Vol: 8.00000 | AABB Wasted Space: 74.31445% | OBB Wasted Space: 0.00000%
+Object: randObj_66 | Mesh Vol: 8.00000 | AABB Vol: 13.35304 | OBB Vol: 8.00000 | AABB Wasted Space: 66.91305% | OBB Wasted Space: 0.00000%
+Object: randObj_67 | Mesh Vol: 8.00000 | AABB Vol: 15.60845 | OBB Vol: 8.00000 | AABB Wasted Space: 95.10557% | OBB Wasted Space: 0.00000%
+Object: randObj_68 | Mesh Vol: 8.00000 | AABB Vol: 8.55805 | OBB Vol: 8.00000 | AABB Wasted Space: 6.97565% | OBB Wasted Space: 0.00000%
+Object: randObj_69 | Mesh Vol: 8.00000 | AABB Vol: 15.92214 | OBB Vol: 8.00000 | AABB Wasted Space: 99.02680% | OBB Wasted Space: 0.00000%
+Object: randObj_70 | Mesh Vol: 8.00000 | AABB Vol: 13.35304 | OBB Vol: 8.00000 | AABB Wasted Space: 66.91305% | OBB Wasted Space: 0.00000%
+Object: randObj_71 | Mesh Vol: 8.00000 | AABB Vol: 15.51754 | OBB Vol: 8.00000 | AABB Wasted Space: 93.96928% | OBB Wasted Space: 0.00000%
+Object: randObj_72 | Mesh Vol: 8.00000 | AABB Vol: 12.23935 | OBB Vol: 8.00000 | AABB Wasted Space: 52.99186% | OBB Wasted Space: 0.00000%
+Object: randObj_73 | Mesh Vol: 8.00000 | AABB Vol: 14.63231 | OBB Vol: 8.00000 | AABB Wasted Space: 82.90382% | OBB Wasted Space: 0.00000%
+Object: randObj_74 | Mesh Vol: 8.00000 | AABB Vol: 8.27919 | OBB Vol: 8.00000 | AABB Wasted Space: 3.48991% | OBB Wasted Space: -0.00001%
+Object: randObj_75 | Mesh Vol: 8.00000 | AABB Vol: 12.70229 | OBB Vol: 8.00000 | AABB Wasted Space: 58.77868% | OBB Wasted Space: 0.00000%
+Object: randObj_76 | Mesh Vol: 8.00000 | AABB Vol: 10.99685 | OBB Vol: 8.00000 | AABB Wasted Space: 37.46067% | OBB Wasted Space: 0.00000%
+Object: randObj_77 | Mesh Vol: 8.00000 | AABB Vol: 14.92820 | OBB Vol: 8.00000 | AABB Wasted Space: 86.60255% | OBB Wasted Space: 0.00000%
+Object: randObj_78 | Mesh Vol: 8.00000 | AABB Vol: 8.83622 | OBB Vol: 8.00000 | AABB Wasted Space: 10.45281% | OBB Wasted Space: 0.00000%
+Object: randObj_79 | Mesh Vol: 8.00000 | AABB Vol: 12.92527 | OBB Vol: 8.00000 | AABB Wasted Space: 61.56581% | OBB Wasted Space: 0.00000%
+Object: randObj_80 | Mesh Vol: 8.00000 | AABB Vol: 10.99686 | OBB Vol: 8.00000 | AABB Wasted Space: 37.46075% | OBB Wasted Space: 0.00000%
+Object: randObj_81 | Mesh Vol: 8.00000 | AABB Vol: 11.75577 | OBB Vol: 8.00000 | AABB Wasted Space: 46.94709% | OBB Wasted Space: 0.00000%
+Object: randObj_82 | Mesh Vol: 8.00000 | AABB Vol: 10.20511 | OBB Vol: 8.00000 | AABB Wasted Space: 27.56386% | OBB Wasted Space: -0.00001%
+Object: randObj_83 | Mesh Vol: 8.00000 | AABB Vol: 8.27919 | OBB Vol: 8.00000 | AABB Wasted Space: 3.48986% | OBB Wasted Space: -0.00001%
+Object: randObj_84 | Mesh Vol: 8.00000 | AABB Vol: 13.75472 | OBB Vol: 8.00000 | AABB Wasted Space: 71.93401% | OBB Wasted Space: 0.00000%
+Object: randObj_85 | Mesh Vol: 8.00000 | AABB Vol: 12.47358 | OBB Vol: 8.00000 | AABB Wasted Space: 55.91973% | OBB Wasted Space: -0.00001%
+Object: randObj_86 | Mesh Vol: 8.00000 | AABB Vol: 14.12836 | OBB Vol: 8.00000 | AABB Wasted Space: 76.60445% | OBB Wasted Space: 0.00000%
+Object: randObj_87 | Mesh Vol: 8.00000 | AABB Vol: 14.63230 | OBB Vol: 8.00000 | AABB Wasted Space: 82.90376% | OBB Wasted Space: -0.00001%
+Object: randObj_88 | Mesh Vol: 8.00000 | AABB Vol: 9.11337 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91717% | OBB Wasted Space: 0.00000%
+Object: randObj_89 | Mesh Vol: 8.00000 | AABB Vol: 8.27919 | OBB Vol: 8.00000 | AABB Wasted Space: 3.48991% | OBB Wasted Space: 0.00000%
+Object: randObj_90 | Mesh Vol: 8.00000 | AABB Vol: 14.30405 | OBB Vol: 8.00000 | AABB Wasted Space: 78.80067% | OBB Wasted Space: 0.00000%
+Object: randObj_91 | Mesh Vol: 8.00000 | AABB Vol: 13.35304 | OBB Vol: 8.00000 | AABB Wasted Space: 66.91305% | OBB Wasted Space: -0.00001%
+Object: randObj_92 | Mesh Vol: 8.00000 | AABB Vol: 10.73617 | OBB Vol: 8.00000 | AABB Wasted Space: 34.20213% | OBB Wasted Space: 0.00000%
+Object: randObj_93 | Mesh Vol: 8.00000 | AABB Vol: 15.30835 | OBB Vol: 8.00000 | AABB Wasted Space: 91.35439% | OBB Wasted Space: 0.00000%
+Object: randObj_94 | Mesh Vol: 8.00000 | AABB Vol: 13.55727 | OBB Vol: 8.00000 | AABB Wasted Space: 69.46581% | OBB Wasted Space: 0.00000%
+Object: randObj_95 | Mesh Vol: 8.00000 | AABB Vol: 10.99685 | OBB Vol: 8.00000 | AABB Wasted Space: 37.46056% | OBB Wasted Space: -0.00001%
+Object: randObj_96 | Mesh Vol: 8.00000 | AABB Vol: 9.11338 | OBB Vol: 8.00000 | AABB Wasted Space: 13.91724% | OBB Wasted Space: 0.00000%
+Object: randObj_97 | Mesh Vol: 8.00000 | AABB Vol: 15.99513 | OBB Vol: 8.00000 | AABB Wasted Space: 99.93914% | OBB Wasted Space: 0.00000%
+Object: randObj_98 | Mesh Vol: 8.00000 | AABB Vol: 10.73617 | OBB Vol: 8.00000 | AABB Wasted Space: 34.20211% | OBB Wasted Space: 0.00000%
+Object: randObj_99 | Mesh Vol: 8.00000 | AABB Vol: 11.50697 | OBB Vol: 8.00000 | AABB Wasted Space: 43.83715% | OBB Wasted Space: 0.00000%
+Results after 100 iterations:
+  AABB Total Time: 119 ms
+  OBB Total Time: 99 ms
+  OBB/AABB Time Ratio: 0.831933x
+  Avg Time per Object:
+    AABB: 0.0119 ms
+    OBB: 0.0099 ms
+Object: randObj_0
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_1
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_2
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_3
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_4
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_5
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_6
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_7
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_8
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_9
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_10
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_11
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_12
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_13
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_14
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_15
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_16
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_17
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_18
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_19
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_20
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_21
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_22
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_23
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_24
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_25
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_26
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_27
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_28
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_29
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_30
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_31
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_32
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_33
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_34
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_35
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_36
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_37
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_38
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_39
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_40
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_41
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0559529 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_42
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_43
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_44
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_45
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_46
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_47
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_48
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_49
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_50
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_51
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_52
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_53
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_54
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_55
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_56
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_57
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_58
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_59
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_60
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_61
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_62
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_63
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_64
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_65
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_66
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_67
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_68
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_69
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_70
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_71
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_72
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_73
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_74
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_75
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_76
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_77
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_78
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_79
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_80
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_81
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_82
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_83
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_84
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_85
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_86
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_87
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_88
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_89
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_90
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_91
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_92
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_93
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_94
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_95
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_96
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_97
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_98
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0.0395647 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Object: randObj_99
+  [OBB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    Rotation Drift: 0 degrees
+  [AABB]
+    Center Drift: 0 units
+    Extents Drift: 0 units
+    (AABBs have no rotation drift)
+Total AABB Memory: 2400 bytes
+Total OBB Memory: 6000 bytes
+OBB/AABB Memory Ratio: 2.5x

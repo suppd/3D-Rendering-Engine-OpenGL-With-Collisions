@@ -1,111 +1,111 @@
 TEST RESULTS AABB OBB PROTOTYPE
-Object: randObj_0 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00010%
-Object: randObj_1 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_2 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00003%
-Object: randObj_3 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00003%
-Object: randObj_4 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_5 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00005%
-Object: randObj_6 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_7 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_8 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00003%
-Object: randObj_9 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_10 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_11 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_12 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_13 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_14 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_15 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_16 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_17 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_18 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00007%
-Object: randObj_19 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00016%
-Object: randObj_20 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00004%
-Object: randObj_21 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_22 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_23 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_24 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00020%
-Object: randObj_25 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00006%
-Object: randObj_26 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00013%
-Object: randObj_27 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_28 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_29 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00009%
-Object: randObj_30 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00007%
-Object: randObj_31 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00007%
-Object: randObj_32 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00004%
-Object: randObj_33 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_34 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_35 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00016%
-Object: randObj_36 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00009%
-Object: randObj_37 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00005%
-Object: randObj_38 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_39 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00023%
-Object: randObj_40 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_41 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00006%
-Object: randObj_42 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00002%
-Object: randObj_43 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_44 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00013%
-Object: randObj_45 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_46 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_47 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00009%
-Object: randObj_48 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_49 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_50 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_51 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00002%
-Object: randObj_52 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00011%
-Object: randObj_53 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00007%
-Object: randObj_54 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00006%
-Object: randObj_55 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_56 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_57 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_58 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_59 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00015%
-Object: randObj_60 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00004%
-Object: randObj_61 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_62 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_63 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00006%
-Object: randObj_64 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_65 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00012%
-Object: randObj_66 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_67 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00002%
-Object: randObj_68 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_69 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00019%
-Object: randObj_70 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00007%
-Object: randObj_71 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00015%
-Object: randObj_72 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00005%
-Object: randObj_73 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00008%
-Object: randObj_74 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00002%
-Object: randObj_75 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00004%
-Object: randObj_76 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00002%
-Object: randObj_77 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00008%
-Object: randObj_78 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00006%
-Object: randObj_79 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00006%
-Object: randObj_80 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_81 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00015%
-Object: randObj_82 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00003%
-Object: randObj_83 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00010%
-Object: randObj_84 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
-Object: randObj_85 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00006%
-Object: randObj_86 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00004%
-Object: randObj_87 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00014%
-Object: randObj_88 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00005%
-Object: randObj_89 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_90 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00001%
-Object: randObj_91 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00008%
-Object: randObj_92 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_93 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00003%
-Object: randObj_94 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
-Object: randObj_95 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00009%
-Object: randObj_96 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00003%
-Object: randObj_97 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00020%
-Object: randObj_98 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00001%
-Object: randObj_99 | AABB Wasted Space: 0.00000% | OBB Wasted Space: -0.00002%
+Object: randObj_0 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_1 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_2 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00007% | OBB Wasted Space: 0.00000%
+Object: randObj_3 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_4 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_5 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_6 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_7 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_8 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_9 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_10 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_11 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_12 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_13 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_14 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_15 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_16 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_17 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_18 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_19 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_20 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_21 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_22 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_23 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_24 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_25 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_26 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_27 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_28 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_29 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_30 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_31 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_32 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_33 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00004% | OBB Wasted Space: 0.00000%
+Object: randObj_34 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_35 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_36 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_37 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_38 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_39 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_40 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_41 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_42 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_43 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_44 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_45 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_46 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_47 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_48 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_49 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_50 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_51 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_52 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_53 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_54 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_55 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_56 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_57 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_58 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00001% | OBB Wasted Space: 0.00000%
+Object: randObj_59 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_60 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_61 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_62 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_63 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_64 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00001% | OBB Wasted Space: 0.00000%
+Object: randObj_65 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_66 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_67 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_68 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_69 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_70 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_71 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_72 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_73 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_74 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_75 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_76 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_77 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_78 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_79 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_80 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_81 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_82 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_83 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_84 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_85 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_86 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00004% | OBB Wasted Space: 0.00000%
+Object: randObj_87 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00001% | OBB Wasted Space: 0.00000%
+Object: randObj_88 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_89 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_90 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00007% | OBB Wasted Space: 0.00000%
+Object: randObj_91 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_92 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00001% | OBB Wasted Space: 0.00000%
+Object: randObj_93 | Mesh Vol: 7.99999 | AABB Vol: 7.99998 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00010% | OBB Wasted Space: 0.00000%
+Object: randObj_94 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_95 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_96 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: -0.00005% | OBB Wasted Space: 0.00000%
+Object: randObj_97 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_98 | Mesh Vol: 7.99999 | AABB Vol: 7.99999 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00000% | OBB Wasted Space: 0.00000%
+Object: randObj_99 | Mesh Vol: 7.99999 | AABB Vol: 8.00000 | OBB Vol: 7.99999 | AABB Wasted Space: 0.00005% | OBB Wasted Space: 0.00000%
 Results after 1000 iterations:
-  AABB Total Time: 2933 ms
-  OBB Total Time: 2729 ms
-  OBB/AABB Time Ratio: 0.930447x
+  AABB Total Time: 2888 ms
+  OBB Total Time: 2693 ms
+  OBB/AABB Time Ratio: 0.932479x
   Avg Time per Object:
-    AABB: 0.02933 ms
-    OBB: 0.02729 ms
+    AABB: 0.02888 ms
+    OBB: 0.02693 ms
 Object: randObj_0
   [OBB]
     Center Drift: 0 units

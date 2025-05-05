@@ -26,20 +26,17 @@ void TestManager::RunAccuracyTest(const std::vector<GameObject*>& objects) {
             continue;
         }
 
-        glm::mat4 world = obj->getWorldTransform();
         glm::vec3 minV(FLT_MAX), maxV(-FLT_MAX);
-        for (auto& v : mesh->_vertices) {
-            glm::vec3 worldV = glm::vec3(world * glm::vec4(v, 1.0f));
-            minV = glm::min(minV, worldV);
-            maxV = glm::max(maxV, worldV);
+        for (const glm::vec3& v : mesh->_vertices) {
+            minV = glm::min(minV, v);
+            maxV = glm::max(maxV, v);
         }
         glm::vec3 meshSize = maxV - minV;
         float meshVolume = meshSize.x * meshSize.y * meshSize.z;
 
         // AABB
         AABB aabb = AABB::ComputeAABBForGameObject(obj);
-        glm::vec3 aabbExtent = aabb.max - aabb.min;
-        float aabbVolume = aabbExtent.x * aabbExtent.y * aabbExtent.z;
+        float aabbVolume = aabb.getVolume();
         float aabbError = (aabbVolume - meshVolume) / meshVolume;
 
         // OBB
@@ -50,6 +47,9 @@ void TestManager::RunAccuracyTest(const std::vector<GameObject*>& objects) {
         std::ostringstream line;
         line << std::fixed << std::setprecision(5);
         line << "Object: " << obj->getName()
+            << " | Mesh Vol: " << meshVolume
+            << " | AABB Vol: " << aabbVolume
+            << " | OBB Vol: " << obbVolume
             << " | AABB Wasted Space: " << aabbError * 100 << "%"
             << " | OBB Wasted Space: " << obbError * 100 << "%\n";
         std::cout << line.str();
@@ -63,7 +63,7 @@ void TestManager::RunAccuracyTest(const std::vector<GameObject*>& objects) {
 // ----------------------------
 void TestManager::RunPerformanceTest(const std::vector<GameObject*>& objects) {
     std::cout << "\n--- PERFORMANCE TEST ---\n";
-    const int iterations = 1000;
+    const int iterations = 100;
 
     // AABB Computation Test
     auto aabbStart = std::chrono::high_resolution_clock::now();

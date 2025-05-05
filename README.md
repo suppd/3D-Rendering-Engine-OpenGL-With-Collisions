@@ -41,26 +41,25 @@ My Objective is to compare diffrent benchmarks between my AABB and OBB setups an
 The tests will all be recorded in a text file that is generated each test run using the file streaming library. I will then compile all data into a single file and then compare and analyze the results.
 The tests are: 
 
-10, 100 and 1000 iterations for all of these tests
+100 and 1000 iterations for all of these tests and random scales (between 0.5 - 1.5)
 
 •	Test With 100 Cubes 
 
-•	Test With 100 Cubes Rotating 
-
-•	Test With 100 Cubes Random Scale
-
+•	Test With 100 Cubes Rotated 
 
 •	Test With 100 Spheres
 
-•	Test With 100 Spheres Rotating
+•	Test With 100 Spheres Rotated
 
-•	Test With 100 Spheres Random Scale
+These Tests are only done in 100 iterations since 1000 would take too much time:
 
-Stress Tests:
+•	Test with 10.000 Cubes 100 Iterations
 
-•	Test with 100 Cubes 10.000 Iterations
+•	Test with 10.000 Cubes Rotated 100 Iterations
 
-•	Test with a 500 cubes (10 iterations only)
+•	Test with 10.000 Spheres 100 Iterations
+
+•	Test with 10.000 Spheres Rotated 100 Iterations
 
 
 
