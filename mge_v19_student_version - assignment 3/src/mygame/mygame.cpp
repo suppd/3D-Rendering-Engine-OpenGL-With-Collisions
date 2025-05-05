@@ -95,7 +95,7 @@ void mygame::_initializeScene()
     _world->setMainLight(light);
 
     //first generate random objects
-    generateRandomObjects(100);
+    generateRandomObjects(10000);
     TestManager tester;
     //then run tests on these objects
     tester.RunAllTests(_gameObjects);
@@ -152,7 +152,7 @@ void mygame::generateRandomObjects(int count) {
          float scale = (1.0f);
         //float scale = (rand() % 100) / 100.0f + 0.5f; // [0.5,1.5]
         //choose mesh
-        Mesh* mesh = cubeMesh; 
+        Mesh* mesh = sphereMesh; 
         // (i % 2 == 0) ? cubeMesh : sphereMesh;
         //Give the specific meshes uniform colors
         AbstractMaterial* mat = redMaterial; 

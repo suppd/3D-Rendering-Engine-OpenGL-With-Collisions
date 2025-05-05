@@ -105,16 +105,16 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
     std::cout << "\n--- CONSISTENCY TEST ---\n";
     std::cout << std::fixed << std::setprecision(4);
 
+    const float DRIFT_THRESHOLD = 0.0001f;
+
     for (GameObject* obj : objects) {
         if (!obj || !obj->getMesh()) continue;
 
         // ========================================================================
         // OBB Consistency Checks
         // ========================================================================
-        //OBB obb1 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
         OBB obb1 = OBB::ComputeOBBForGameObject(obj);
         OBB obb2 = OBB::ComputeOBBForGameObject(obj);
-        //OBB obb2 = CollisionDetector(obj, obj).CreateOBBForGameObject(obj);
 
         float obbCenterDrift = glm::distance(obb1.center, obb2.center);
         float obbExtentsDrift = glm::distance(obb1.extents, obb2.extents);
@@ -130,6 +130,17 @@ void TestManager::RunConsistencyTest(const std::vector<GameObject*>& objects) {
 
         float aabbCenterDrift = glm::distance(aabb1.GetCenter(), aabb2.GetCenter());
         float aabbExtentsDrift = glm::distance(aabb1.GetSize(), aabb2.GetSize());
+
+        // ========================================================================
+        // Skip writing if all drifts are below threshold
+        // ========================================================================
+        if (obbCenterDrift < DRIFT_THRESHOLD &&
+            obbExtentsDrift < DRIFT_THRESHOLD &&
+            obbAngleDrift < DRIFT_THRESHOLD &&
+            aabbCenterDrift < DRIFT_THRESHOLD &&
+            aabbExtentsDrift < DRIFT_THRESHOLD) {
+            continue;
+        }
 
         // ========================================================================
         // Results Output

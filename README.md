@@ -51,19 +51,17 @@ The tests are:
 
 •	Test With 100 Spheres Rotated
 
-These Tests are only done in 100 iterations since 1000 would take too much time:
-
-•	Test with 10.000 Cubes 100 Iterations
-
-•	Test with 10.000 Cubes Rotated 100 Iterations
-
-•	Test with 10.000 Spheres 100 Iterations
-
-•	Test with 10.000 Spheres Rotated 100 Iterations
 
 
 
 ## Test Results
+
+Here are the results for the Cube Tests:
+
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Here are the results for the Sphere Tests:
+
 
 ## Results Analysis
 
