@@ -68,7 +68,7 @@ I have a diffrent text file for each single test and iteration amount I used AI 
 Here are the results for the Cube Tests:
 
 ###Cube Graphs Containing Accuracy & Performance:
-![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Cubes.png "Cubes Graph")
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/Test%20Result%20Graphs/Cubes.png "Cubes Graph")
 
 ####Consistency:
 Non-Rotated Cubes (100_CUBES_*_ITE.txt):
@@ -95,7 +95,7 @@ OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 
 
 ###Sphere Graphs Containing Accuracy & Performance:
-![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Spheres.png "Spheres Graph")
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/Test%20Result%20Graphs/Spheres.png "Spheres Graph")
 
 ####Consistency:
 For the consistency I originally was printing a lot of line but decided to implement a threshold so i got rid of all 0 values since theyre not really relevant.
