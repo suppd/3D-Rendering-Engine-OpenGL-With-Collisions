@@ -16,9 +16,9 @@ The common consensus is that AABB is cheap but less precise and OBB is expensive
 
 [OBB Tutorial](https://github.com/juj/MathGeoLib/blob/master/src/Geometry/OBB.cpp)
 
-[Chrono Library] (https://en.cppreference.com/w/cpp/chrono)
+[Chrono Library](https://en.cppreference.com/w/cpp/chrono)
 
-[Writing To Text File] (https://stackoverflow.com/questions/72493490/trying-creating-and-writing-into-a-txt-file-in-c)
+[Writing To Text File](https://stackoverflow.com/questions/72493490/trying-creating-and-writing-into-a-txt-file-in-c)
 
 ## Test Environment
 
@@ -40,18 +40,28 @@ My testing procedure is setup within the code, I will run a few diffrent scenari
 My Objective is to compare diffrent benchmarks between my AABB and OBB setups and see how well they do compared to each other.
 The tests will all be recorded in a text file that is generated each test run using the file streaming library. I will then compile all data into a single file and then compare and analyze the results.
 The tests are: 
+
 10, 100 and 1000 iterations for all of these tests
+
 •	Test With 100 Cubes 
+
 •	Test With 100 Cubes Rotating 
+
 •	Test With 100 Cubes Random Scale
 
+
 •	Test With 100 Spheres
+
 •	Test With 100 Spheres Rotating
+
 •	Test With 100 Spheres Random Scale
 
 Stress Tests:
+
 •	Test with 100 Cubes 10.000 Iterations
+
 •	Test with a 500 cubes (10 iterations only)
+
 
 
 ## Test Results
