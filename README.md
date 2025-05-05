@@ -59,8 +59,12 @@ The tests are:
 Here are the results for the Cube Tests:
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Cubes.png "Cubes Graph")
+
 Here are the results for the Sphere Tests:
+
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/mge_v19_student_version%20-%20assignment%203/assets/Test%20Result%20Graphs/Spheres.png "Cubes Graph"
 
 
 ## Results Analysis
