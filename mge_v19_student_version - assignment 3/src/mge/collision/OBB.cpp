@@ -85,24 +85,33 @@ bool OBB::intersects(const OBB& other) const {
 }
 
 float OBB::getVolume() {
-    return 2.0f * extents.x * extents.y * extents.z;
+    return 2.0f * extents.x * 2.0f * extents.y * 2.0f * extents.z;
+
 }
 
-OBB OBB::CreateOBBForGameObject(GameObject* obj) {
+OBB OBB::ComputeOBBForGameObject(GameObject* obj) {
     glm::vec3 center = obj->getWorldPosition();
 
     AABB localAABB = AABB::ComputeLocalAABB(obj->getMesh());
+    glm::vec3 localCenter = (localAABB.min + localAABB.max) * 0.5f;
     glm::vec3 localExtents = (localAABB.max - localAABB.min) * 0.5f;
 
-    glm::mat3 worldTransform = glm::mat3(obj->getWorldTransform());
+    glm::mat4 world = obj->getWorldTransform();
+    glm::mat3 rotationScale = glm::mat3(world);
 
-    glm::vec3 extents = glm::vec3(
-        glm::length(worldTransform[0] * localExtents),
-        glm::length(worldTransform[1] * localExtents),
-        glm::length(worldTransform[2] * localExtents)
-    );
+    // Transform local center into world space
+    glm::vec3 worldCenter = glm::vec3(world * glm::vec4(localCenter, 1.0f));
 
-    glm::mat3 orientation = worldTransform;
+    // Each column of the rotationScale matrix represents a local axis in world space, scaled
+    glm::vec3 axisX = rotationScale[0] * localExtents.x;
+    glm::vec3 axisY = rotationScale[1] * localExtents.y;
+    glm::vec3 axisZ = rotationScale[2] * localExtents.z;
 
-    return OBB(center, extents, orientation);
+    glm::vec3 worldExtents = glm::vec3(glm::length(axisX), glm::length(axisY), glm::length(axisZ));
+
+    glm::mat3 orientation = glm::mat3(glm::normalize(rotationScale[0]),
+        glm::normalize(rotationScale[1]),
+        glm::normalize(rotationScale[2]));
+
+    return OBB(worldCenter, worldExtents, orientation);
 }

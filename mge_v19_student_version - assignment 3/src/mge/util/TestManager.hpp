@@ -16,16 +16,14 @@
 class TestManager {
 public:
     static void RunAllTests(const std::vector<GameObject*>& objects);
-private:
     static void RunAccuracyTest(const std::vector<GameObject*>& objects);
     static void RunPerformanceTest(const std::vector<GameObject*>& objects);
     static void RunConsistencyTest(const std::vector<GameObject*>& objects);
-    //static void RunScalingTest(const std::vector<GameObject*>& objects);
     static void RunMemoryTest(const std::vector<GameObject*>& objects);
+private:
 
     static std::ofstream testResults;
     static void OpenFile(const std::string& filename);
     static void TestManager::WriteLine(const std::string& line);
     static void CloseFile();
 };
-

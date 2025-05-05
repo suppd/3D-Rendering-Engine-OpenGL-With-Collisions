@@ -15,6 +15,18 @@ CamKeysBehaviour::~CamKeysBehaviour()
 {
 }
 
+
+void CamKeysBehaviour::setBehaviourTarget(GameObject* target) {
+    _target = target;
+}
+
+void CamKeysBehaviour::setTargets(const std::vector<GameObject*>& targets) {
+    _targets = targets;
+    if (!_targets.empty()) {
+        _currentTargetIndex = 0;
+        _target = _targets[0];
+    }
+}
 void CamKeysBehaviour::update(float pStep)
 {
     float moveSpeed = 0.0f; // Default if no keys
@@ -78,4 +90,23 @@ void CamKeysBehaviour::update(float pStep)
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
         _owner->translate(glm::vec3(0.0f, 0.0f, -_moveSpeed * pStep)); // Move backward
     }
+
+    // Handle cycling targets
+    bool key1 = sf::Keyboard::isKeyPressed(sf::Keyboard::Num1);
+    bool key2 = sf::Keyboard::isKeyPressed(sf::Keyboard::Num2);
+
+    if (key2 && !_key2WasPressed && !_targets.empty()) {
+        _currentTargetIndex = (_currentTargetIndex + 1) % _targets.size();
+        _target = _targets[_currentTargetIndex];
+        std::cout << "Switched to object index: " << _currentTargetIndex << std::endl;
+    }
+    if (key1 && !_key1WasPressed && !_targets.empty()) {
+        _currentTargetIndex = (_currentTargetIndex - 1 + _targets.size()) % _targets.size();
+        _target = _targets[_currentTargetIndex];
+        std::cout << "Switched to object index: " << _currentTargetIndex << std::endl;
+    }
+
+    _key1WasPressed = key1;
+    _key2WasPressed = key2;
+
 }

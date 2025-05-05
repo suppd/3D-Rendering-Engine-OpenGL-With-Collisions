@@ -12,34 +12,30 @@ bool CollisionDetector::checkCollisionOBB() {
 
 
 OBB CollisionDetector::CreateOBBForGameObject(GameObject* obj) {
-    //glm::vec3 center = obj->getWorldPosition();
-    //glm::vec3 extents = obj->getScale() * 0.5f; // Assuming the mesh is a unit cube
-    //glm::mat3 orientation = glm::mat3(obj->getWorldTransform());
+    glm::vec3 center = obj->getWorldPosition();
 
-    //return OBB(center, extents, orientation);
-    Mesh* tempMesh;
-    tempMesh = obj->getMesh();
-    std::vector<glm::vec3> vertices = tempMesh->_vertices;
+    AABB localAABB = AABB::ComputeLocalAABB(obj->getMesh());
+    glm::vec3 localCenter = (localAABB.min + localAABB.max) * 0.5f;
+    glm::vec3 localExtents = (localAABB.max - localAABB.min) * 0.5f;
 
-    // Calculate the center (mean of vertices)
-    glm::vec3 center(0.0f);
-    for (const auto& vertex : vertices) {
-        center += vertex;
-    }
-    center /= vertices.size();
+    glm::mat4 world = obj->getWorldTransform();
+    glm::mat3 rotationScale = glm::mat3(world);
 
-    // Calculate extents (half the width, height, depth)
-    glm::vec3 minVertex = vertices[0];
-    glm::vec3 maxVertex = vertices[0];
-    for (const auto& vertex : vertices) {
-        minVertex = glm::min(minVertex, vertex);
-        maxVertex = glm::max(maxVertex, vertex);
-    }
-    glm::vec3 extents = (maxVertex - minVertex) * 0.5f;
+    // Transform local center into world space
+    glm::vec3 worldCenter = glm::vec3(world * glm::vec4(localCenter, 1.0f));
 
-    glm::mat3 orientation(1.0f);
+    // Each column of the rotationScale matrix represents a local axis in world space, scaled
+    glm::vec3 axisX = rotationScale[0] * localExtents.x;
+    glm::vec3 axisY = rotationScale[1] * localExtents.y;
+    glm::vec3 axisZ = rotationScale[2] * localExtents.z;
 
-    return OBB(center, extents, orientation);
+    glm::vec3 worldExtents = glm::vec3(glm::length(axisX), glm::length(axisY), glm::length(axisZ));
+
+    glm::mat3 orientation = glm::mat3(glm::normalize(rotationScale[0]),
+        glm::normalize(rotationScale[1]),
+        glm::normalize(rotationScale[2]));
+
+    return OBB(worldCenter, worldExtents, orientation);
 }
 
 bool CollisionDetector::checkCollisionAABB(const AABB& aabb1, const AABB& aabb2) {

@@ -177,7 +177,7 @@
     <ClCompile Include="..\src\mge\util\DebugDraw.cpp">
       <Filter>MGE Source files\mge\util</Filter>
     </ClCompile>
-    <ClCompile Include="TestManager.cpp">
+    <ClCompile Include="..\src\mge\util\TestManager.cpp">
       <Filter>MGE Source files\mge\util</Filter>
     </ClCompile>
   </ItemGroup>

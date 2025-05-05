@@ -24,7 +24,27 @@ AABB AABB::ComputeLocalAABB(const Mesh* mesh) {
 AABB AABB::ComputeAABBForGameObject(GameObject* obj)
 {
     AABB localAABB = AABB::ComputeLocalAABB(obj->getMesh());
-    glm::vec3 min = obj->getWorldTransform() * glm::vec4(localAABB.min, 1.0f);
-    glm::vec3 max = obj->getWorldTransform() * glm::vec4(localAABB.max, 1.0f);
-    return AABB(min, max);
+
+    // Get all 8 corners of the local AABB
+    glm::vec3 corners[8];
+    corners[0] = glm::vec3(localAABB.min.x, localAABB.min.y, localAABB.min.z);
+    corners[1] = glm::vec3(localAABB.max.x, localAABB.min.y, localAABB.min.z);
+    corners[2] = glm::vec3(localAABB.min.x, localAABB.max.y, localAABB.min.z);
+    corners[3] = glm::vec3(localAABB.max.x, localAABB.max.y, localAABB.min.z);
+    corners[4] = glm::vec3(localAABB.min.x, localAABB.min.y, localAABB.max.z);
+    corners[5] = glm::vec3(localAABB.max.x, localAABB.min.y, localAABB.max.z);
+    corners[6] = glm::vec3(localAABB.min.x, localAABB.max.y, localAABB.max.z);
+    corners[7] = glm::vec3(localAABB.max.x, localAABB.max.y, localAABB.max.z);
+
+    glm::mat4 transform = obj->getWorldTransform();
+
+    glm::vec3 worldMin(FLT_MAX);
+    glm::vec3 worldMax(-FLT_MAX);
+
+    for (int i = 0; i < 8; ++i) {
+        glm::vec3 worldCorner = glm::vec3(transform * glm::vec4(corners[i], 1.0f));
+        worldMin = glm::min(worldMin, worldCorner);
+        worldMax = glm::max(worldMax, worldCorner);
+    }
+    return AABB(worldMin, worldMax);
 }

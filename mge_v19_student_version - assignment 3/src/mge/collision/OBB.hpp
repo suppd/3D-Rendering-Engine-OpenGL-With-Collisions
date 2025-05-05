@@ -30,7 +30,7 @@ struct OBB {
         corners[7] = center - extentsX + extentsY + extentsZ;
     }
     float OBB::getVolume();
-    static OBB CreateOBBForGameObject(GameObject* obj);
+    static OBB ComputeOBBForGameObject(GameObject* obj);
 };;
 
 #endif

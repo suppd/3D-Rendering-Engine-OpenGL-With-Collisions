@@ -90,16 +90,19 @@ void mygame::_initializeScene()
     light->setMesh(cubeMeshF);
     light->setMaterial(lightMaterial);
     light->setAmbientStrength(3);
-    light->setBehaviour(new KeysBehaviour(25));
+    light->setBehaviour(new KeysBehaviour(25,25));
     _world->add(light);
     _world->setMainLight(light);
 
-
-    generateRandomObjects(10);
+    //first generate random objects
+    generateRandomObjects(100);
     TestManager tester;
+    //then run tests on these objects
     tester.RunAllTests(_gameObjects);
-    camera->setBehaviour(new CamKeysBehaviour());
-    camera->setBehaviourTarget(_gameObjects[0], camera->getBehaviour());
+
+    CamKeysBehaviour* camBehaviour = new CamKeysBehaviour();
+    camBehaviour->setTargets(_gameObjects);
+    camera->setBehaviour(camBehaviour);
 
 }
 
@@ -111,7 +114,7 @@ void mygame::_render() {
     //do debug drawing of OBB and AABB to visualize them
     for (GameObject* obj : _gameObjects) {
         // Draw OBB in blue
-        OBB obb = OBB::CreateOBBForGameObject(obj);
+        OBB obb = OBB::ComputeOBBForGameObject(obj);
         DebugDraw::DrawOBB(obb, glm::vec3(0, 0, 1)); 
 
         // Draw AABB in green
@@ -140,33 +143,37 @@ void mygame::generateRandomObjects(int count) {
     AbstractMaterial* redMaterial = new ColorMaterial(glm::vec3(1, 0, 0), _world->getMainCamera());
     AbstractMaterial* greenMaterial = new ColorMaterial(glm::vec3(0, 1, 0), _world->getMainCamera());
 
+    //random position
     for (int i = 0; i < count; ++i) {
-        // Random position
-        float x = (rand() % 200 - 100) / 10.0f;
-        float y = (rand() % 100) / 10.0f;
-        float z = (rand() % 200 - 100) / 10.0f;
-
-        // Random scale 
-        float scale = (rand() % 100) / 100.0f + 0.5f;
-        //for creating 50/50 of two types of meshes
-        Mesh* mesh = (i % 2 == 0) ? cubeMesh : cubeMesh;
+        float x = (rand() % 400 - 200) / 5.0f; // [-40, 40]
+        float y = (rand() % 200) / 10.0f;      // [0, 20]
+        float z = (rand() % 400 - 200) / 5.0f; // [-40, 40]
+        // scale 
+        // float scale = (0.5f);
+        float scale = (rand() % 100) / 100.0f + 0.5f; // [0.5,1.5]
+        //choose mesh
+        Mesh* mesh = sphereMesh; 
+        // (i % 2 == 0) ? cubeMesh : sphereMesh;
         //Give the specific meshes uniform colors
-        AbstractMaterial* mat = (i % 2 == 0) ? redMaterial : greenMaterial;
+        AbstractMaterial* mat = redMaterial; 
+        //(i % 2 == 0) ? redMaterial : greenMaterial;
 
         GameObject* obj = new GameObject("randObj_" + std::to_string(i), glm::vec3(0));
         obj->setMesh(mesh);
         obj->setMaterial(mat);
         obj->setLocalPosition(glm::vec3(x, y, z));
         obj->scale(glm::vec3(scale));
-        //for rotating object
-        // obj->setBehaviour(new RotatingBehaviour());
+
+        //random rotation
+        float angle = (rand() % 360);
+        //obj->rotate(glm::radians(angle), glm::vec3(1.0f, 0.0f, 0.0f));
+
         _world->add(obj);
         _gameObjects.push_back(obj);
     }
 
     std::cout << count << " random objects generated.\n";
 }
-
 
 mygame::~mygame()
 {
