@@ -58,7 +58,7 @@ And -10% would mean it's too small, how i calculate this is: (collision box volu
 
 Speed: For the speed testing i basically run a loop with x amount of iteration (this is what 100_ITE / 1000_ITE means), over the randomly generated objects and their corresponding AABB & OBB box and check per collision box how long it takes to compute.
 
-Consistency: The way I test consistency is again with a loop but this time i generate 2 boxes of both collision types per object and check the numerical diffrences between them if there are any, to see how consistent the generating is.
+Consistency: The way I test consistency is again with a loop for each passed gameobject but this time i generate 2 boxes of both collision types per object and check the numerical diffrences between them if there are any, to see how consistent the generating is.
 
 Memory Usage: I check the size of the generated boxes in bytes, and then compare them between AABB & OBB.
 
@@ -136,4 +136,4 @@ So, in conclusion, OBB uses more memory than AABB no matter the shape but is a l
 
 <IMG>
 
-This project successfully validates the theoretical expectations of both collision systems while providing metrics. If I had more time or decided to work more on this project later on I would choose to work on a hybrid version of AABB/OBB, and test GPU-based collision handling to see how that would affect performance. I also would run more different types of tests.
+This project validates the theoretical expectations of both collision systems while giving workable metrics. If I had more time or decided to work more on this project later on I would choose to work on a hybrid version of AABB/OBB, and test GPU-based collision handling to see how that would affect performance. I also would run more different types of tests.
