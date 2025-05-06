@@ -1,4 +1,4 @@
-# 3D Rendering Engine OpenGL With Collisions
+# 3D Rendering Engine OpenGL With Collision Box Computation For 3D Objects (No Collision Solving)
 
 ## Description & Justification
 This project contains a simple open GL rendering engine thats able to render 3D meshes, texture them and feed shaders to the materials to for example have a debug shader for the collision boxes.
