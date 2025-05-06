@@ -63,7 +63,7 @@ Consistency: The way I test consistency is again with a loop for each passed gam
 Memory Usage: I check the size of the generated boxes in bytes, and then compare them between AABB & OBB.
 
 ## Test Results
-These test results consist of the folling categories: accuracy, performance, consistency and memory.
+These test results consist of the following categories: accuracy, performance, consistency and memory.
 I have a diffrent text file for each single test and iteration amount I used AI to summarize these as it would be impossible to do this as a human.
 The raw test result files are included in the git repo, under assets > test results. With the following naming convention: (Number of object_3D object type_Number of Iterations_ITE meaning iterations_Rotated or not if empty)
 
@@ -74,11 +74,13 @@ The raw test result files are included in the git repo, under assets > test resu
 
 #### Consistency:
 
+For the consistency test I originally was printing a lot of lines but decided to implement a threshold so i got rid of all 0 values since theyre not really relevant.
+
 Non-Rotated Cubes (100_CUBES_*_ITE.txt):
 
-OBB Drifts: 0° perfect consistency, no rotation/position/size deviations.
+OBB Drifts: 0° no drifts.
 
-AABB Drifts: 0° always stable, because AABBs don’t rotate.
+AABB Drifts: 0° no drifts.
 
 Rotated Cubes (100_CUBES_*_ITE_ROTATED.txt):
 
@@ -96,23 +98,22 @@ Total OBB Memory: 6000 bytes
 
 OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 
-##Sphere Section
+## Sphere Section
 
 ### Sphere Graphs Containing Accuracy & Performance:
 ![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/Test%20Result%20Graphs/Spheres.png "Spheres Graph")
 
 #### Consistency:
 
-For the consistency I originally was printing a lot of line but decided to implement a threshold so i got rid of all 0 values since theyre not really relevant.
 Non-Rotated Spheres (100_SPHERES_*_ITE.txt):
 
-OBB & AABB Drifts: 0° perfect fits.
+OBB & AABB Drifts: 0° no drifts.
 
 Rotated Spheres (100_SPHERES_*_ITE_ROTATED.txt):
 
 OBB Drifts: Tiny rotation drifts (max 0.056°) in a few objects.
 
-AABB Drifts: 0° perfect fits.
+AABB Drifts: 0° no drifts.
 
 #### Memory:
 
