@@ -60,12 +60,12 @@ Speed: For the speed testing i basically run a loop with x amount of iteration (
 
 Consistency: The way I test consistency is again with a loop but this time i generate 2 boxes of both collision types per object and check the numerical diffrences between them if there are any, to see how consistent the generating is.
 
-Memory Usage: I basically just check the size of the generate boxes (in lists), and then put them in a ratio OBB vs AABB.
+Memory Usage: I check the size of the generated boxes in bytes, and then compare them between AABB & OBB.
 
 ## Test Results
 These test results consist of the folling categories: accuracy, performance, consistency and memory.
 I have a diffrent text file for each single test and iteration amount I used AI to summarize these as it would be impossible to do this as a human.
-Here are the results for the Cube Tests:
+The raw test result files are included in the git repo, under assets > test results. With the following naming convention: (Number of object_3D object type_Number of Iterations_ITE meaning iterations_Rotated or not if empty)
 
 ## Cube Section
 
@@ -73,6 +73,7 @@ Here are the results for the Cube Tests:
 ![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/Test%20Result%20Graphs/Cubes.png "Cubes Graph")
 
 #### Consistency:
+
 Non-Rotated Cubes (100_CUBES_*_ITE.txt):
 
 OBB Drifts: 0° perfect consistency, no rotation/position/size deviations.
@@ -87,7 +88,7 @@ AABB Drifts: 0° no drifts
 
 #### Memory:
 
-In all of the tests the memory consumption was the same for all x amount iterations
+In all of the tests the memory consumption was the same for all iterations
 
 Total AABB Memory: 2400 bytes
 
@@ -101,6 +102,7 @@ OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 ![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/Test%20Result%20Graphs/Spheres.png "Spheres Graph")
 
 #### Consistency:
+
 For the consistency I originally was printing a lot of line but decided to implement a threshold so i got rid of all 0 values since theyre not really relevant.
 Non-Rotated Spheres (100_SPHERES_*_ITE.txt):
 
@@ -114,7 +116,7 @@ AABB Drifts: 0° perfect fits.
 
 #### Memory:
 
-In all of the tests the memory consumption was the same for all x amount iterations
+In all of the tests the memory consumption was the same for all iterations
 
 Total AABB Memory: 2400 bytes
 
@@ -123,3 +125,12 @@ Total OBB Memory: 6000 bytes
 OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 
 ## Conclusion & Final Thoughts
+
+AABBs are the more memory-efficient and computationally stable option, with zero observed drifts in all test cases. However, the biggest downside is their bad accuracy on rotated objects, leading to high wasted space (up to ~76% for cubes and ~70% for spheres). This makes them unusable for precise collision detection in dynamic environments where objects frequently rotate.
+OBBs, while 2.5x more memory-intensive, are more consistent, give near-perfect fits (0% wasted space), and are 16–17% faster in performance for cubes and ~7% faster for spheres. The minor rotation drifts observed (max 0.056°) are negligible in practice and likely happen because of floating point errors and not because of the OBB algorithm itself. Their better accuracy and speed make them the better fit for precise 3D collision box calculations, especially if objects are rotated.
+Interestingly, the spheres performed better in consistency than the cubes. But both shapes followed the same memory and performance patterns as in the cube tests. Once again, it means that OBB is clearly the better option when it comes to accuracy and speed, while AABBs remain usable for static or axis-aligned objects where memory is a constraint.
+So, in conclusion, OBB uses more memory than AABB no matter the shape but is a little bit faster than AABB to my surprise. And OBB is more precise when it comes to rotated objects generating a tight fit around the 3D object, which is also visualized in the scene: 
+
+<IMG>
+
+This project successfully validates the theoretical expectations of both collision systems while providing metrics. If I had more time or decided to work more on this project later on I would choose to work on a hybrid version of AABB/OBB, and test GPU-based collision handling to see how that would affect performance. I also would run more different types of tests.
