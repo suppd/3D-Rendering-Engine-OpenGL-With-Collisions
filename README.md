@@ -125,6 +125,38 @@ Total OBB Memory: 6000 bytes
 
 OBB/AABB Memory Ratio: 2.5x (OBB uses 2.5x more memory)
 
+#### 10.000 Cubes To Test Scalability:
+
+I also ran two test with 10.000 cubes rotated and not rotated but only one iteration, the reason why i seperate these is because these text files were so long that they were too big for AI to read.
+So I analyzed them myself roughly and found that all results were for the most part the same no rotation = both accurate with little deviancy, rotation = OBB accurate and AABB very varyingly accurate.
+The only results that were intresting are these:
+
+Results after 1 iterations:
+  AABB Total Time: 120 ms
+  OBB Total Time: 99 ms
+  OBB/AABB Time Ratio: 0.825x
+  Avg Time per Object:
+    AABB: 0.012 ms
+    OBB: 0.0099 ms
+	
+Total AABB Memory: 240000 bytes
+Total OBB Memory: 600000 bytes
+OBB/AABB Memory Ratio: 2.5x
+
+
+Results after 1 iterations:
+  AABB Total Time: 123 ms
+  OBB Total Time: 100 ms
+  OBB/AABB Time Ratio: 0.813008x
+  Avg Time per Object:
+    AABB: 0.0123 ms
+    OBB: 0.01 ms
+	
+Total AABB Memory: 240000 bytes
+Total OBB Memory: 600000 bytes
+OBB/AABB Memory Ratio: 2.5x
+
+	
 ## Conclusion & Final Thoughts
 
 AABBs are the more memory-efficient and computationally stable option, with zero observed drifts in all test cases. However, the biggest downside is their bad accuracy on rotated objects, leading to high wasted space (up to ~76% for cubes and ~70% for spheres). This makes them unusable for precise collision detection in dynamic environments where objects frequently rotate.
@@ -133,8 +165,10 @@ OBBs, while 2.5x more memory-intensive, are more consistent, give near-perfect f
 
 Interestingly, the spheres performed better in consistency than the cubes. But both shapes followed the same memory and performance patterns as in the cube tests. Once again, it means that OBB is clearly the better option when it comes to accuracy and speed, while AABBs remain usable for static or axis-aligned objects where memory is a constraint.
 
+Scalability wise both AABB and OBB perform as before in terms of accuracy, performance and consistency except the amount of memory that is used, it increases linearly.
+
 So, in conclusion, OBB uses more memory than AABB no matter the shape but is a little bit faster than AABB to my surprise. And OBB is more precise when it comes to rotated objects generating a tight fit around the 3D object, which is also visualized in the scene: 
 
-<IMG>
+![alt text](https://github.com/suppd/3D-Rendering-Engine-OpenGL-With-Collisions/blob/main/Project/assets/RenderIMG.png "Scene Render")
 
 This project validates the theoretical expectations of both collision systems while giving workable metrics. If I had more time or decided to work more on this project later on I would choose to work on a hybrid version of AABB/OBB, and test GPU-based collision handling to see how that would affect performance. I also would run more different types of tests.

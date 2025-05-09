@@ -1,0 +1,11 @@
+TEST RESULTS AABB OBB PROTOTYPE
+Results after 1 iterations:
+  AABB Total Time: 120 ms
+  OBB Total Time: 99 ms
+  OBB/AABB Time Ratio: 0.825x
+  Avg Time per Object:
+    AABB: 0.012 ms
+    OBB: 0.0099 ms
+Total AABB Memory: 240000 bytes
+Total OBB Memory: 600000 bytes
+OBB/AABB Memory Ratio: 2.5x
